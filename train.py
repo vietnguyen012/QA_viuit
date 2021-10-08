@@ -143,6 +143,7 @@ if __name__ == '__main__':
                      max_f1 = f1
                      max_em = em
                      val_delta = delta
+                    print(f"update new delta:{val_delta}")
         else:
             f1, em = eval(model, val_data_loader, tokenizer, delta=val_delta)
             if epoch % 7 == 0 and epoch != 0:
