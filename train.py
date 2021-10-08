@@ -62,8 +62,8 @@ def eval(model,val_data_loader,tokenizer,device="cuda",delta=0.5):
                         found = True
                         break
                 assert found == True,print("input_feature.id,batch[id]:",input_feature.id,batch["ids"][step])
-                f1_score = compute_exact(gold_ans,pred_ans)
-                em_score = compute_f1(gold_ans,pred_ans)
+                em_score = compute_exact(gold_ans,pred_ans)
+                f1_score = compute_f1(gold_ans,pred_ans)
                 f1.append(f1_score)
                 em.append(em_score)
             mean_loss = sum(losses) / len(losses)
