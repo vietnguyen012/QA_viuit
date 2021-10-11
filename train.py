@@ -13,13 +13,17 @@ torch.cuda.manual_seed(seed)
 from apex import amp
 import os
 
-def train(model,train_data_loader,optimizer,scheduler):
+def train(model,train_data_loader,optimizer,scheduler,epoch):
     model.train()
     losses = []
+    total_logit_losses=[]
+    loss_has=[]
     loop = tqdm(tqdm(train_data_loader),position=0, leave=True)
     for (step, batch) in enumerate(loop):
-        loss = model(batch)
+        loss,total_logit_loss,loss_ha = model(batch)
         losses.append(loss.item())
+        total_logit_losses.append(total_logit_loss.item())
+        loss_has.append(loss_ha)
         with amp.scale_loss(loss, optimizer) as scaled_loss:
             scaled_loss.backward()
         optimizer.step()
@@ -28,29 +32,35 @@ def train(model,train_data_loader,optimizer,scheduler):
         optimizer.zero_grad()
         torch.cuda.empty_cache()
         mean_loss = sum(losses) / len(losses)
-        loop.set_postfix(loss=mean_loss)
+        mean_total_logits = sum(total_logit_losses)/len(total_logit_losses)
+        mean_loss_has = sum(loss_has)/len(loss_has)
+        loop.set_postfix(epoch=epoch,loss=mean_loss,mean_total_logits=mean_total_logits,mean_loss_lm_has=mean_loss_has)
 
 def eval(model,val_data_loader,tokenizer,device="cuda",delta=0.5):
     model.eval()
     losses = []
     f1 = []
     em = []
-    beta1=0.5
-    beta2=0.5
     loop = tqdm(tqdm(val_data_loader),position=0, leave=True)
     model = model.to(device)
     for (step, batch) in enumerate(loop):
         with torch.no_grad():
             start_logits, end_logits, has_ans_logits, loss = model(batch,return_logits=True)
-            has_ans_scores = torch.nn.Sigmoid()(has_ans_logits)
+            clf = torch.argmax(torch.nn.Softmax(dim=-1)(has_ans_logits),dim=-1)
             losses.append(loss.item())
-            for ind,(start_logit,end_logit,has_ans_logit,has_ans_score) in enumerate(zip(start_logits,end_logits,has_ans_logits,has_ans_scores)):
+            has_answer = False
+            for ind,(start_logit,end_logit,is_has) in enumerate(zip(start_logits,end_logits,clf)):
+                offset_mapping = batch["offset_mappings"][ind]
                 start_pos = torch.argmax(start_logit)
                 end_pos = torch.argmax(end_logit)
-                if end_pos < start_pos or has_ans_score < delta or end_pos == start_pos == 0:
+                if end_pos < start_pos or is_has == 0 or end_pos == start_pos == 0 or \
+                        start_pos >= len(offset_mapping) or end_pos >= len(offset_mapping) \
+                 or offset_mapping[start_pos] is None or offset_mapping[end_pos] is None:
                     pred_ans = ""
                 else:
-                    pred_ans = tokenizer.decode(batch["input_ids"][ind][start_pos.cpu(): end_pos.cpu()+1])
+                    start_char = offset_mapping[start_pos][0]
+                    end_char = offset_mapping[end_pos][1]
+                    has_answer=True
                 found = False
                 for input_feature in input_feature_list:
                     if input_feature.id == batch["ids"][ind]:
@@ -58,10 +68,13 @@ def eval(model,val_data_loader,tokenizer,device="cuda",delta=0.5):
                             gold_ans = ""
                             found = True
                             break
-                        gold_ans = input_feature.ans
-                        found = True
-                        break
-                assert found == True,print("input_feature.id,batch[id]:",input_feature.id,batch["ids"][step])
+                        else:
+                            gold_ans = input_feature.context[offset_mapping[batch["start_position"][ind]][0]:offset_mapping[batch["end_position"][ind]][1]]
+                            found = True
+                            break
+                assert found == True,print("input_feature.id,batch[id]:",input_feature.id,batch["ids"][ind])
+                if has_answer:
+                    pred_ans = input_feature.context[start_char:end_char]
                 em_score = compute_exact(gold_ans,pred_ans)
                 f1_score = compute_f1(gold_ans,pred_ans)
                 f1.append(f1_score)
@@ -104,7 +117,7 @@ if __name__ == '__main__':
     num_warmup_steps = 2
     no_decay = ['bias', 'LayerNorm.weight']
     train_examples = len(train_input_feature_list)
-    train_batch_size = 67
+    train_batch_size = 40
     val_batch_size = 64
     num_train_epochs = 100
     warmup_proportion = 0.1
@@ -113,7 +126,7 @@ if __name__ == '__main__':
     num_warmup_steps = int(num_train_steps * warmup_proportion)
     train_data_loader = QA_Dataloader(train_input_feature_list, shuffle=True, device="cuda", batch_size=train_batch_size)
     val_data_loader = QA_Dataloader(val_input_feature_list, device="cuda", batch_size=val_batch_size)
-    model = QA_Model(n_vocab=tokenizer.vocab_size).to("cuda")
+    model = QA_Model().to("cuda")
     optimizer = get_optimizer(model, 2e-5, 2e-5)
     model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=num_warmup_steps,
@@ -131,22 +144,26 @@ if __name__ == '__main__':
         f1 = checkpoint['best_f1']
         em = checkpoint['best_exact_match']
         print(f"previous f1:{f1}  exact match:{em}")
+    print("model:",model.eval())
+    print("======================training======================")
     for epoch in range(num_train_epochs):
-        train(model, train_data_loader, optimizer, scheduler)
+        print(f"======================epoch={epoch}=========================")
+        train(model, train_data_loader, optimizer, scheduler,epoch)
+        print("======================validating====================")
         max_f1 = -1
         max_em = -1
         val_delta = 0.5
         if epoch == 0 or epoch%7==0:
-            for delta in ([0.1,0.2,0.3, 0.4, 0.5,0.6,0.7,0.8,0.9]):
+            for delta in ([ 0.5]):
                  f1, em = eval(model, val_data_loader, tokenizer, delta=delta)
                  if f1 > max_f1 or em > max_em:
                      max_f1 = f1
                      max_em = em
                      val_delta = delta
-                    print(f"update new delta:{val_delta}")
+                     print(f"update new delta:{val_delta}")
         else:
             f1, em = eval(model, val_data_loader, tokenizer, delta=val_delta)
-            if epoch % 7 == 0 and epoch != 0:
+            if epoch % 9 == 0 and epoch != 0:
                 if best_em < em or besr_f1 < f1 :
                     best_em = em
                     best_f1 = f1
@@ -155,8 +172,8 @@ if __name__ == '__main__':
                     checkpoint = {
                         'epoch': epoch,
                         'model': model.state_dict(),
-                        'optimizer': optimizer,
-                        'lr_sched': scheduler,
+                        'optimizer': optimizer.state_dict(),
+                        'scheduler': scheduler.state_dict(),
                         'best_exact_match':best_em,
                         'best_f1':best_f1,
                         'threshold':val_delta}

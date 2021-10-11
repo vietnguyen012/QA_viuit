@@ -53,19 +53,22 @@ class QA_data(Dataset):
                 stride =self.doc_stride,return_overflowing_tokens = True,
                 return_offsets_mapping=True,padding="max_length")
 
-        offset_mapping = tokenized_examples.pop("offset_mapping")
+        offset_mapping = tokenized_examples["offset_mapping"]
         tokened_ques = self.tokenizer(ex.question)
         tokenized_examples["id"] = []
+        tokenized_examples["context"] = ex.context
         tokenized_examples["start_positions"] = []
         tokenized_examples["end_positions"] = []
-        tokenized_examples["masked_pos"] = []
-        tokenized_examples["masked_tokens"] = []
+        # tokenized_examples["masked_pos"] = []
+        # tokenized_examples["masked_tokens"] = []
         tokenized_examples["has_answer"] = []
         tokenized_examples["question_ids"] = tokened_ques["input_ids"]
         tokenized_examples["question_masks"] = tokened_ques["attention_mask"]
         tokenized_examples["question_token_type"] = tokened_ques["token_type_ids"]
         tokenized_examples["answer_text"] = []
-        tokenized_examples["masked_input_ids"] = tokenized_examples["input_ids"]
+        tokenized_examples["sentence_ans"] = []
+        tokenized_examples["sentence_ans"] = []
+        # tokenized_examples["masked_input_ids"] = tokenized_examples["input_ids"]
         for i, offsets in enumerate(offset_mapping):
             tokenized_examples["id"].append(ex.id+"_"+str(i))
             input_ids = tokenized_examples["input_ids"][i]
@@ -90,10 +93,11 @@ class QA_data(Dataset):
             if not (offsets[token_start_index][0] <= start_char and offsets[token_end_index][1] >= end_char):
                 tokenized_examples["start_positions"].append(cls_index)
                 tokenized_examples["end_positions"].append(cls_index)
-                tokenized_examples["masked_pos"].append([0]*self.max_masked_pred)
-                tokenized_examples["masked_tokens"].append([0]*self.max_masked_pred)
+                # tokenized_examples["masked_pos"].append([0]*self.max_masked_pred)
+                # tokenized_examples["masked_tokens"].append([0]*self.max_masked_pred)
                 tokenized_examples["has_answer"].append(0)
                 tokenized_examples["answer_text"].append("")
+                tokenized_examples["sentence_ans"].append(self.tokenizer(ex.question))
             else:
                 while token_start_index < len(offsets) and offsets[token_start_index][0] <= start_char:
                     token_start_index += 1
@@ -102,71 +106,94 @@ class QA_data(Dataset):
                     token_end_index -= 1
                 tokenized_examples["end_positions"].append(token_end_index + 1)
                 # print(self.tokenizer.decode(tokenized_examples["input_ids"][i][token_start_index-1: token_end_index+2]))
-                token_start_pos = token_start_index-1
-                token_end_pos =  token_end_index+1
-                len_cand_mask = token_end_index - token_start_pos
-                n_pred =  min(self.max_masked_pred, max(1, int(round(len_cand_mask * 0.15))))
-                cand_maked_pos = [pos for pos in range(token_start_pos,token_end_pos+1)]
-                # for pos in cand_maked_pos:
-                #     print(self.tokenizer.convert_ids_to_tokens(input_ids[pos]))
-                shuffle(cand_maked_pos)
-                masked_pos = []
-                masked_tokens = []
-                for pos in cand_maked_pos[:n_pred]:
-                    masked_pos.append(pos)
-                    masked_tokens.append(input_ids[pos])
-                    if random() < 0.8:
-                        tokenized_examples["masked_input_ids"] [i][pos] = self.tokenizer.convert_tokens_to_ids('[MASK]') # make mask
-                    elif random() < 0.1:
-                        index = randint(0, self.tokenizer.vocab_size - 1) # random index in vocabulary
-                        inv_vocab = {v: k for k, v in self.tokenizer.vocab.items()}
-                        tokenized_examples["masked_input_ids"][i][pos] = self.tokenizer.convert_tokens_to_ids(inv_vocab[index]) # replace
-                if self.max_masked_pred > n_pred:
-                    n_pad = self.max_masked_pred - n_pred
-                    masked_pos.extend([0] * n_pad)
-                    masked_tokens.extend([0] * n_pad)
-                tokenized_examples["masked_pos"].append(masked_pos)
-                tokenized_examples["masked_tokens"].append(masked_tokens)
+                # token_start_pos = token_start_index-1
+                # token_end_pos =  token_end_index+1
                 tokenized_examples["has_answer"].append(int(not ex.is_impossible))
                 tokenized_examples["answer_text"].append(ex.ans)
+                sentence_ans_len = 256 - len(ex.ans)
+                side_sentece_ans_len = sentence_ans_len//2
+                start_sentence = -1
+                end_sentence = -1
+                for i in range(ex.start_pos-side_sentece_ans_len,ex.start_pos):
+                    if ex.context[i:i+1] == " ":
+                        start_sentence = i+1
+                        break
+                for j in range(ex.start_pos+len(ex.ans)+side_sentece_ans_len,ex.start_pos+len(ex.ans),-1):
+                    if ex.context[j:j+1] == " ":
+                        end_sentence = j-1
+                        break
+                sentence_ans = self.tokenizer(ex.question+ex.context[start_sentence:end_sentence].strip()+' [SEP] '+ex.ans)
+                tokenized_examples["sentence_ans"].append(sentence_ans)
+
+
+            # n_pred =  min(self.max_masked_pred, max(1, int(round(len(input_ids) * 0.15))))
+            # cand_maked_pos = [i for i,token in enumerate(input_ids) if token != self.tokenizer.convert_tokens_to_ids("[CLS]") \
+            #                   and token != self.tokenizer.convert_tokens_to_ids("[SEP]") and token != 0]
+            # # for pos in cand_maked_pos:
+            # #     print(self.tokenizer.convert_ids_to_tokens(input_ids[pos]))
+            # shuffle(cand_maked_pos)
+            # masked_pos = []
+            # masked_tokens = []
+            # for pos in cand_maked_pos[:n_pred]:
+            #     masked_pos.append(pos)
+            #     masked_tokens.append(input_ids[pos])
+            #     if random() < 0.8:
+            #         tokenized_examples["masked_input_ids"] [i][pos] = self.tokenizer.convert_tokens_to_ids('[MASK]') # make mask
+            #     elif random() < 0.1:
+            #         index = randint(0, self.tokenizer.vocab_size - 1) # random index in vocabulary
+            #         inv_vocab = {v: k for k, v in self.tokenizer.vocab.items()}
+            #         tokenized_examples["masked_input_ids"][i][pos] = self.tokenizer.convert_tokens_to_ids(inv_vocab[index]) # replace
+            # if self.max_masked_pred > n_pred:
+            #     n_pad = self.max_masked_pred - n_pred
+            #     masked_pos.extend([0] * n_pad)
+            #     masked_tokens.extend([0] * n_pad)
+            # tokenized_examples["masked_pos"].append(masked_pos)
+            # tokenized_examples["masked_tokens"].append(masked_tokens)
+
         return tokenized_examples
 
 class Input_feature:
-    def __init__(self,id,ans,input_ids,masked_input_ids,question_ids,start_position,end_position,attention_mask,token_type_ids,has_answer,masked_tokens,masked_pos,question_masks,question_token_type):
+    def __init__(self,id,context,offset_mapping,input_ids,question_ids,start_position,end_position,attention_mask,token_type_ids,has_answer,question_masks,question_token_type,sentence_ans_ids,masked_sentence_ans_ids):
         self.id = id
-        self.ans = ans
+        self.context = context
         self.start_position = start_position
         self.end_position = end_position
         self.has_answer = has_answer
+        self.offset_mapping = offset_mapping
         self.input_ids = input_ids
-        self.masked_input_ids = masked_input_ids
-        self.masked_pos = masked_pos
-        self.masked_tokens = masked_tokens
         self.token_type_ids = token_type_ids
         self.attention_mask = attention_mask
         self.question_id = question_ids
         self.question_mask = question_masks
         self.question_token_type = question_token_type
+        self.sentence_ans_ids = sentence_ans_ids
+        self.masked_sentence_ans_ids = masked_sentence_ans_ids
 def convert_to_input_feature(ex,input_feature_list):
         len_features = len(ex["overflow_to_sample_mapping"])
         for i in range(len_features):
+            offset_mapping = ex["offset_mapping"][i]
             input_ids = ex["input_ids"][i]
-            masked_input_ids = ex["masked_input_ids"][i]
-            ans = ex["answer_text"][i]
+            # masked_input_ids = ex["masked_input_ids"][i]
             token_type_ids = ex["token_type_ids"][i]
             attention_mask = ex["attention_mask"][i]
             start_pos = ex["start_positions"][i]
             end_pos = ex["end_positions"][i]
-            masked_pos = ex["masked_pos"][i]
-            masked_tokens = ex["masked_tokens"][i]
+            # masked_pos = ex["masked_pos"][i]
+            # masked_tokens = ex["masked_tokens"][i]
             has_answer = ex["has_answer"][i]
+            if has_answer:
+                context = ex["context"]
+            else:
+                context = ""
             question_id = ex["question_ids"]
             question_mask = ex["question_masks"]
             question_token_type = ex["question_token_type"]
+            sentence_ans_ids = ex["sentence_ans"][i]["input_ids"]
+            masked_sentence_ans_ids = ex["sentence_ans"][i]["attention_mask"]
             id = ex["id"][i]
-            input_feature_list.append(Input_feature(id,ans,input_ids,masked_input_ids,question_id,start_pos,end_pos,attention_mask, \
-                token_type_ids,has_answer,masked_tokens,masked_pos,question_mask,question_token_type))
+            input_feature_list.append(Input_feature(id,context,offset_mapping,input_ids,question_id,start_pos,end_pos,attention_mask, \
+                token_type_ids,has_answer,question_mask,question_token_type,sentence_ans_ids,masked_sentence_ans_ids))
         return input_feature_list
-        
+
 if __name__ == "__main__":
     tok_ex = QA_data(128,384,"train.json",max_masked_pred=20)[2540]

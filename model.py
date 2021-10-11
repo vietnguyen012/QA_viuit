@@ -3,8 +3,9 @@ import torch.nn.functional as F
 import numpy as np
 import torch
 from einops import rearrange
-from torch import nn
-
+from torch.nn.utils.rnn import pad_packed_sequence as unpack
+from torch.nn.utils.rnn import pack_padded_sequence as pack
+import torch.nn as nn
 
 class MultiHeadSelfAttention(nn.Module):
     def __init__(self, dim, heads=8, dim_head=None):
@@ -64,79 +65,158 @@ class TransformerLayer(nn.Module):
        y = self.norm_1(self.drop(self.mhsa(q,k,v, mask)) + q)
        return self.norm_2(self.linear(y) + y)
 
-class FocalLoss(nn.Module):
-    def __init__(self, gamma=2, weight=None, ignore_index=-100):
-        super(FocalLoss, self).__init__()
-        self.gamma = gamma
-        self.weight = weight
-        self.ignore_index=ignore_index
+class TransformerBlock(nn.Module):
+    def __init__(self,n_layer):
+        super().__init__()
+        self.n_layers = n_layer
+        self.block = nn.ModuleList([TransformerLayer(dim=768, heads=8) for _ in range(self.n_layers)])
+    def forward(self,q,k,v):
+        for i in range(self.n_layers):
+            output = self.block[i](q,k,v)
+            q = output
+        return output
 
-    def forward(self, input, target):
-        logpt = F.log_softmax(input, dim=1)
-        pt = torch.exp(logpt)
-        logpt = (1-pt)**self.gamma * logpt
-        loss = F.nll_loss(logpt, target, self.weight, ignore_index=self.ignore_index)
-        return loss
+# class FocalLoss(nn.Module):
+#     def __init__(self, gamma=2, weight=None, ignore_index=-100):
+#         super(FocalLoss, self).__init__()
+#         self.gamma = gamma
+#         self.weight = weight
+#         self.ignore_index=ignore_index
+#
+#     def forward(self, input, target):
+#         logpt = F.log_softmax(input, dim=1)
+#         pt = torch.exp(logpt)
+#         logpt = (1-pt)**self.gamma * logpt
+#         loss = F.nll_loss(logpt, target, self.weight, ignore_index=self.ignore_index)
+#         return loss
+
+class SentenceModel(nn.Module):
+    def __init__(self,out_dim,pretrained_model):
+        super(SentenceModel,self).__init__()
+        self.encoder = ElectraForPreTraining.from_pretrained(pretrained_model).electra
+        self.decoder = torch.nn.Linear(768, out_dim)
+    def forward(self,input_ids ,attention_mask):
+        output_sentence = self.encoder(input_ids=input_ids,
+                                                attention_mask=attention_mask).last_hidden_state[:, 0]
+        has_ans_logits = self.decoder(output_sentence)
+        return has_ans_logits
+
+class BiLSTM(nn.Module):
+    """
+    input size: (batch, seq_len, input_size)
+    output size: (batch, seq_len, num_directions * hidden_size) last layer
+    h_0: (num_layers * num_directions, batch, hidden_size)
+    c_0: (num_layers * num_directions, batch, hidden_size)
+    """
+    def __init__(self, n_layers, input_size, hidden_size,dropout=0.3):
+        super(BiLSTM, self).__init__()
+        self.hidden_size = hidden_size
+        self.input_size = input_size  # TODO: verify the input size
+        self.pdrop = dropout
+        self.n_layers = n_layers
+        self.bilstm = nn.LSTM(self.input_size, self.hidden_size, self.n_layers, batch_first=True, bidirectional=True)
+        self.h0 = None
+        self.c0 = None
+
+    def forward(self, X, X_mask, dropout=True, use_packing=False):
+        if use_packing:
+            N, max_len = X.shape[0], X.shape[-2]
+            lens = torch.sum(X_mask, dim=-1)
+            lens += torch.eq(lens, 0).long()  # Avoid length 0
+            lens, indices = torch.sort(lens, descending=True)
+            _, rev_indices = torch.sort(indices, descending=False)
+
+            X = pack(X[indices], lens, batch_first=True)
+            H, (h0, c0) = self.bilstm(X)
+            H, _ = unpack(H, total_length=max_len, batch_first=True)
+
+            # h0: [2, N, hidden_size]
+            # H : [N, maxlen, hidden_size*2]
+            H = H[rev_indices]
+            h0 = torch.transpose(h0, 0, 1)
+            h0 = h0[rev_indices].view(N, 2 * self.hidden_size)
+            c0 = torch.transpose(c0, 0, 1)
+            c0 = c0[rev_indices].view(N, 2 * self.hidden_size)
+        else:
+            H, (h0, c0) = self.bilstm(X)
+
+        if X_mask is not None:
+            H = H * X_mask.unsqueeze(-1).float()
+        if dropout:
+            H = F.dropout(H, self.pdrop, training=self.training)
+        return H, (h0, c0)
 
 class QA_Model(nn.Module):
-    def __init__(self,dr_rate=0.3,n_vocab =32055,pretrained_model="FPTAI/velectra-base-discriminator-cased",alpha1=0.5,alpha2=0.5):
+    def __init__(self,dr_rate=0.3,pretrained_model="FPTAI/velectra-base-discriminator-cased",alpha1=0.5,alpha2=0.5):
         super(QA_Model,self).__init__()
-        self.encoder = ElectraForPreTraining.from_pretrained(pretrained_model).electra
+        self.sentence_encoder = SentenceModel(2,pretrained_model)
+        self.sentence_encoder.load_state_dict(torch.load("./saved_model/cross-encoder-reranking-model.pt"))
+        self.encoder = self.sentence_encoder.encoder
         self.encoder_output_dim = self.encoder.config.hidden_size
         self.dropout = nn.Dropout(dr_rate)
         self.linear = nn.Linear(self.encoder_output_dim,2)
-        self.has_answer = nn.Linear(self.encoder_output_dim,1)
-        self.lm = nn.Linear(self.encoder_output_dim,n_vocab,bias=False)
-        embed_weight = self.encoder.embeddings.word_embeddings.weight
-        self.lm.weight = embed_weight
-        self.lm_bias = nn.Parameter(torch.zeros(n_vocab))
-        self.transformer = TransformerLayer(dim=768,heads=8)
-        self.alpha1 = 0.5
-        self.alpha2 = 0.5
+        # self.lm = nn.Linear(self.encoder_output_dim,n_vocab,bias=False)
+        # embed_weight = self.encoder.embeddings.word_embeddings.weight
+        # self.lm.weight = embed_weight
+        # self.lm_bias = nn.Parameter(torch.zeros(n_vocab))
+        self.transformer_block = TransformerBlock(n_layer=3)
+        self.bilstm = BiLSTM(2,self.encoder_output_dim,self.encoder_output_dim//2)
+        self.alpha1 = alpha1
+        self.alpha2 = alpha2
+
     def forward(self,batch,return_logits=False):
-        masked_input_ids,token_type_ids,attention_mask, \
-           start_positions,end_positions,has_answer,masked_tokens,masked_pos,question_ids,question_mask,question_token_types \
-             = batch["masked_input_ids"],batch["token_type_ids"],batch["attention_mask"], \
-            batch["start_position"],batch["end_position"],batch["has_answer"],batch["masked_tokens"],\
-               batch["masked_pos"],batch["question_ids"],batch["question_mask"],batch["question_token_types"]
-        batch_size = masked_input_ids.size(0)
-        all_outputs = self.encoder(masked_input_ids,attention_mask,token_type_ids)[0]
-        question_output = self.encoder(question_ids,question_mask,question_token_types)[0]
-        outputs = self.transformer(all_outputs,question_output,question_output)
+        input_ids,token_type_ids,attention_mask, \
+           start_positions,end_positions,has_answer,question_ids,question_mask,question_token_types,sentence_ans_ids,masked_sentence_ans_ids\
+             = batch["input_ids"],batch["token_type_ids"],batch["attention_mask"], \
+            batch["start_position"],batch["end_position"],batch["has_answer"],batch["question_ids"],batch["question_mask"],batch["question_token_types"], \
+        batch["sentence_ans_ids"],batch["masked_sentence_ans_ids"]
+
+        all_outputs = self.encoder(input_ids,attention_mask,token_type_ids)[0]
+
+        question_embed = self.encoder.embeddings.word_embeddings(question_ids)
+        question_output,_ = self.bilstm(question_embed,question_mask)
+
+        outputs = self.transformer_block(all_outputs,question_output,question_output)
+
         outputs = self.dropout(outputs)
         logits = self.linear(outputs)
+
         start_logits,end_logits = logits.split(1,dim=-1)
         start_logits = start_logits.squeeze(-1).contiguous()
         end_logits = end_logits.squeeze(-1).contiguous()
-        
-        total_loss = None
+
         assert start_positions is not None and end_positions is not None
         if len(start_positions.size()) > 1:
             start_positions = start_positions.squeeze(-1)
         if len(end_positions.size()) > 1:
             end_positions = end_positions.squeeze(-1)
+
         ignored_index = start_logits.size(1)
-        start_positions = start_positions.clamp(0,ignored_index)
-        end_positions = end_positions.clamp(0,ignored_index)
+        cls_na_start_positions = start_positions*has_answer
+        cls_na_end_positions = end_positions*has_answer
+        cls_na_start_positions = cls_na_start_positions.clamp(0,ignored_index)
+        cls_na_end_positions = cls_na_end_positions.clamp(0,ignored_index)
 
-        loss_fct = FocalLoss(ignore_index=ignored_index)
-        start_loss = loss_fct(start_logits,start_positions)
-        end_loss = loss_fct(end_logits, end_positions)
+        loss_fct = nn.CrossEntropyLoss(ignore_index=ignored_index)
+        start_loss = loss_fct(start_logits,cls_na_start_positions)
+        end_loss = loss_fct(end_logits, cls_na_end_positions)
 
-        masked_pos = masked_pos[:,:,None].expand(-1,-1,outputs.size(-1))
-        h_masked = torch.gather(outputs,1,masked_pos)
-        ce = nn.CrossEntropyLoss()
-        logits_lm = self.lm(h_masked) + self.lm_bias
-        loss_lm = ce(logits_lm.transpose(1,2),masked_tokens)
-        loss_lm = (loss_lm.float()).mean()
-        bce = nn.BCEWithLogitsLoss()
-        sum_ans_vec = torch.cat([outputs[:,[0]*batch_size,:],outputs[:,start_positions,:],outputs[:,end_positions,:]],dim=1).sum(1)
-        has_ans_logits = self.has_answer(sum_ans_vec)
-        loss_has_ans = bce(has_ans_logits.squeeze(-1),has_answer.float())
-        total_loss = self.alpha1*(end_loss+start_loss)/2+self.alpha2*(loss_has_ans+loss_lm)/2
+        has_ans_logits = self.sentence_encoder(sentence_ans_ids,masked_sentence_ans_ids)
+        loss_has_ans = loss_fct(has_ans_logits,has_answer.view(-1))
+
         if return_logits:
             return start_logits,end_logits,has_ans_logits,(start_loss+end_loss)/2
-        return total_loss
+
+        # masked_pos = masked_pos[:, :, None].expand(-1, -1, outputs.size(-1))
+        # h_masked = torch.gather(outputs, 1, masked_pos)
+        # ce = nn.CrossEntropyLoss()
+        # logits_lm = self.lm(h_masked) + self.lm_bias
+        # loss_lm = ce(logits_lm.transpose(1, 2), masked_tokens)
+        # loss_lm = (loss_lm.float()).mean()
+
+        total_loss = self.alpha1*(end_loss+start_loss)/2+self.alpha2*(loss_has_ans)
+
+        return total_loss,(start_loss+end_loss)/2,(loss_has_ans)
 
 
 
