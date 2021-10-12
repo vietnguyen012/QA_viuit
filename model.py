@@ -6,6 +6,7 @@ from einops import rearrange
 from torch.nn.utils.rnn import pad_packed_sequence as unpack
 from torch.nn.utils.rnn import pack_padded_sequence as pack
 import torch.nn as nn
+from prediction import Prediction,find_context_question_for_batch
 
 class MultiHeadSelfAttention(nn.Module):
     def __init__(self, dim, heads=8, dim_head=None):
@@ -89,16 +90,23 @@ class TransformerBlock(nn.Module):
 #         logpt = (1-pt)**self.gamma * logpt
 #         loss = F.nll_loss(logpt, target, self.weight, ignore_index=self.ignore_index)
 #         return loss
+def mean_pooling(model_output,attention_mask):
+    token_embedding = model_output
+    input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embedding.size()).float()
+    return torch.sum(token_embedding*input_mask_expanded,1)/torch.clamp(input_mask_expanded.sum(1),min=1e-9)
 
 class SentenceModel(nn.Module):
     def __init__(self,out_dim,pretrained_model):
         super(SentenceModel,self).__init__()
         self.encoder = ElectraForPreTraining.from_pretrained(pretrained_model).electra
         self.decoder = torch.nn.Linear(768, out_dim)
+        self.dropout = nn.Dropout(0.3)
     def forward(self,input_ids ,attention_mask):
         output_sentence = self.encoder(input_ids=input_ids,
-                                                attention_mask=attention_mask).last_hidden_state[:, 0]
-        has_ans_logits = self.decoder(output_sentence)
+                                                attention_mask=attention_mask).last_hidden_state
+        mean_pooling_output_sentence = mean_pooling(output_sentence,attention_mask)
+        mean_pooling_output_sentence = self.dropout(mean_pooling_output_sentence)
+        has_ans_logits = self.decoder(mean_pooling_output_sentence)
         return has_ans_logits
 
 class BiLSTM(nn.Module):
@@ -147,7 +155,7 @@ class BiLSTM(nn.Module):
         return H, (h0, c0)
 
 class QA_Model(nn.Module):
-    def __init__(self,dr_rate=0.3,pretrained_model="FPTAI/velectra-base-discriminator-cased",alpha1=0.5,alpha2=0.5):
+    def __init__(self,dr_rate=0.5,pretrained_model="FPTAI/velectra-base-discriminator-cased",alpha1=0.5,alpha2=0.5):
         super(QA_Model,self).__init__()
         self.sentence_encoder = SentenceModel(2,pretrained_model)
         self.sentence_encoder.load_state_dict(torch.load("./saved_model/cross-encoder-reranking-model.pt"))
@@ -164,60 +172,125 @@ class QA_Model(nn.Module):
         self.alpha1 = alpha1
         self.alpha2 = alpha2
 
-    def forward(self,batch,return_logits=False):
-        input_ids,token_type_ids,attention_mask, \
-           start_positions,end_positions,has_answer,question_ids,question_mask,question_token_types,sentence_ans_ids,masked_sentence_ans_ids\
-             = batch["input_ids"],batch["token_type_ids"],batch["attention_mask"], \
-            batch["start_position"],batch["end_position"],batch["has_answer"],batch["question_ids"],batch["question_mask"],batch["question_token_types"], \
-        batch["sentence_ans_ids"],batch["masked_sentence_ans_ids"]
+    def forward(self,batch,return_logits=False,train=True,pred_list=None,tokenizer=None,input_feature_list=None):
+        if train:
+            input_ids,token_type_ids,attention_mask, \
+               start_positions,end_positions,has_answer,question_ids,question_mask,question_token_types,sentence_ans_ids,masked_sentence_ans_ids\
+                 = batch["input_ids"],batch["token_type_ids"],batch["attention_mask"], \
+                batch["start_position"],batch["end_position"],batch["has_answer"],batch["question_ids"],batch["question_mask"],batch["question_token_types"], \
+            batch["sentence_ans_ids"],batch["masked_sentence_ans_ids"]
 
-        all_outputs = self.encoder(input_ids,attention_mask,token_type_ids)[0]
+            all_outputs = self.encoder(input_ids,attention_mask,token_type_ids)[0]
+            all_outputs = self.dropout(all_outputs)
+            question_embed = self.encoder.embeddings.word_embeddings(question_ids)
+            question_output,_ = self.bilstm(question_embed,question_mask)
 
-        question_embed = self.encoder.embeddings.word_embeddings(question_ids)
-        question_output,_ = self.bilstm(question_embed,question_mask)
+            outputs = self.transformer_block(all_outputs,question_output,question_output)
 
-        outputs = self.transformer_block(all_outputs,question_output,question_output)
+            outputs = self.dropout(outputs)
+            logits = self.linear(outputs)
 
-        outputs = self.dropout(outputs)
-        logits = self.linear(outputs)
+            start_logits,end_logits = logits.split(1,dim=-1)
+            start_logits = start_logits.squeeze(-1).contiguous()
+            end_logits = end_logits.squeeze(-1).contiguous()
 
-        start_logits,end_logits = logits.split(1,dim=-1)
-        start_logits = start_logits.squeeze(-1).contiguous()
-        end_logits = end_logits.squeeze(-1).contiguous()
+            assert start_positions is not None and end_positions is not None
+            if len(start_positions.size()) > 1:
+                start_positions = start_positions.squeeze(-1)
+            if len(end_positions.size()) > 1:
+                end_positions = end_positions.squeeze(-1)
 
-        assert start_positions is not None and end_positions is not None
-        if len(start_positions.size()) > 1:
-            start_positions = start_positions.squeeze(-1)
-        if len(end_positions.size()) > 1:
-            end_positions = end_positions.squeeze(-1)
+            ignored_index = start_logits.size(1)
+            cls_na_start_positions = start_positions*has_answer
+            cls_na_end_positions = end_positions*has_answer
+            cls_na_start_positions = cls_na_start_positions.clamp(0,ignored_index)
+            cls_na_end_positions = cls_na_end_positions.clamp(0,ignored_index)
 
-        ignored_index = start_logits.size(1)
-        cls_na_start_positions = start_positions*has_answer
-        cls_na_end_positions = end_positions*has_answer
-        cls_na_start_positions = cls_na_start_positions.clamp(0,ignored_index)
-        cls_na_end_positions = cls_na_end_positions.clamp(0,ignored_index)
+            loss_fct = nn.CrossEntropyLoss(ignore_index=ignored_index)
+            start_loss = loss_fct(start_logits,cls_na_start_positions)
+            end_loss = loss_fct(end_logits, cls_na_end_positions)
 
-        loss_fct = nn.CrossEntropyLoss(ignore_index=ignored_index)
-        start_loss = loss_fct(start_logits,cls_na_start_positions)
-        end_loss = loss_fct(end_logits, cls_na_end_positions)
+            has_ans_logits = self.sentence_encoder(sentence_ans_ids,masked_sentence_ans_ids)
+            loss_has_ans = loss_fct(has_ans_logits,has_answer.view(-1))
 
-        has_ans_logits = self.sentence_encoder(sentence_ans_ids,masked_sentence_ans_ids)
-        loss_has_ans = loss_fct(has_ans_logits,has_answer.view(-1))
+            if return_logits:
+                return start_logits,end_logits,has_ans_logits,(start_loss+end_loss)/2
 
-        if return_logits:
-            return start_logits,end_logits,has_ans_logits,(start_loss+end_loss)/2
+            # masked_pos = masked_pos[:, :, None].expand(-1, -1, outputs.size(-1))
+            # h_masked = torch.gather(outputs, 1, masked_pos)
+            # ce = nn.CrossEntropyLoss()
+            # logits_lm = self.lm(h_masked) + self.lm_bias
+            # loss_lm = ce(logits_lm.transpose(1, 2), masked_tokens)
+            # loss_lm = (loss_lm.float()).mean()
 
-        # masked_pos = masked_pos[:, :, None].expand(-1, -1, outputs.size(-1))
-        # h_masked = torch.gather(outputs, 1, masked_pos)
-        # ce = nn.CrossEntropyLoss()
-        # logits_lm = self.lm(h_masked) + self.lm_bias
-        # loss_lm = ce(logits_lm.transpose(1, 2), masked_tokens)
-        # loss_lm = (loss_lm.float()).mean()
+            total_loss = self.alpha1*(end_loss+start_loss)/2+self.alpha2*(loss_has_ans)
 
-        total_loss = self.alpha1*(end_loss+start_loss)/2+self.alpha2*(loss_has_ans)
+            return total_loss,(start_loss+end_loss)/2,(loss_has_ans)
+        else:
+            ids, input_ids, attention_mask, token_type_ids, question_ids, question_mask, question_token_types = \
+                batch["ids"], batch["input_ids"], batch["attention_mask"], \
+                batch["token_type_ids"], batch[
+                    "question_ids"], batch["question_mask"], batch["question_token_types"]
+            questions,contexts,offset_mappings = find_context_question_for_batch(input_feature_list,ids)
+            all_outputs = self.encoder(input_ids, attention_mask, token_type_ids)[0]
 
-        return total_loss,(start_loss+end_loss)/2,(loss_has_ans)
+            question_embed = self.encoder.embeddings.word_embeddings(question_ids)
+            question_output, _ = self.bilstm(question_embed, question_mask)
 
+            outputs = self.transformer_block(all_outputs, question_output, question_output)
+
+            outputs = self.dropout(outputs)
+            logits = self.linear(outputs)
+
+            start_logits, end_logits = logits.split(1, dim=-1)
+            start_logits = start_logits.squeeze(-1).contiguous()
+            end_logits = end_logits.squeeze(-1).contiguous()
+
+            start_indexes = torch.argmax(start_logits, dim=-1)
+            start_scores = start_logits.gather(1, start_indexes.unsqueeze(-1))
+            end_indexes = torch.argmax(end_logits, dim=-1)
+            end_scores = end_logits.gather(1, end_indexes.unsqueeze(-1))
+
+            for ind, (start_score, start_index, end_score, end_index) in enumerate(
+                    zip(start_scores, start_indexes, end_scores, end_indexes)):
+                if end_index < start_index or end_index == start_index == 0:
+                    pred_ans = ""
+                    na_score = (start_score + end_score) / 2
+                    pred_list.append(
+                        Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist()))
+                else:
+                    start_char = offset_mappings[ind][start_index][0]
+                    end_char = offset_mappings[ind][end_index][1]
+                    pred_ans = contexts[ind][start_char:end_char]
+                    sentence_ans_len = 256 - len(pred_ans)
+                    side_sentece_ans_len = sentence_ans_len // 2
+                    start_sentence = -1
+                    end_sentence = -1
+                    for i in range(start_index - side_sentece_ans_len, start_index):
+                        if contexts[ind][i:i + 1] == " ":
+                            start_sentence = i + 1
+                            break
+                    for j in range(start_index + len(pred_ans) + side_sentece_ans_len, start_index + len(pred_ans), -1):
+                        if contexts[ind][j:j + 1] == " ":
+                            end_sentence = j - 1
+                            break
+                    sentence_ans = tokenizer(questions[ind] + " " + contexts[ind][
+                                                                    start_sentence:end_sentence].strip() + ' [SEP] ' + pred_ans,truncation=True,max_length = 384)
+                    sentence_input_ids = torch.LongTensor(sentence_ans["input_ids"]).to(input_ids.device)
+                    sentence_mask_attention = torch.LongTensor(sentence_ans["attention_mask"]).to(input_ids.device)
+                    has_ans_logits = self.sentence_encoder(sentence_input_ids.unsqueeze(0),
+                                                           sentence_mask_attention.unsqueeze(0))
+                    clf = torch.argmax(torch.nn.Softmax(dim=-1)(has_ans_logits), dim=-1)
+                    if clf == 1:
+                        has_score = (start_score + end_score)/2
+                        pred_list.append(Prediction(ids[ind], pred_ans, has_score=has_score.cpu().tolist()))
+                    else:
+                        pred_ans = ""
+                        na_score = (start_score + end_score)/2
+                        na_score_verifier = has_ans_logits[clf]
+                        pred_list.append(
+                            Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist(), na_score_verifier=na_score_verifier.cpu().tolist()))
+            return pred_list
 
 
 
