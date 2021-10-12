@@ -3,7 +3,10 @@
             "ans": "",
             "na_score": -1.9917750358581543,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0881927013397217,
+                  -2.7605884075164795
+            ]
       },
       "uit_000002_0": {
             "ans": "",
@@ -54,7 +57,10 @@
             "ans": "",
             "na_score": 0.5220628976821899,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.019701957702637,
+                  -3.777357816696167
+            ]
       },
       "uit_000008_0": {
             "ans": "",
@@ -141,7 +147,10 @@
             "ans": "",
             "na_score": 0.2549645006656647,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7127039432525635,
+                  -3.2511184215545654
+            ]
       },
       "uit_000018_0": {
             "ans": "",
@@ -213,7 +222,10 @@
             "ans": "",
             "na_score": 0.42012864351272583,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.493105888366699,
+                  -3.090473175048828
+            ]
       },
       "uit_000028_0": {
             "ans": "",
@@ -228,7 +240,10 @@
             "ans": "",
             "na_score": -1.0082212686538696,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1173367500305176,
+                  -2.7955076694488525
+            ]
       },
       "uit_000030_0": {
             "ans": "hai bên bờ sông Seine",
@@ -315,7 +330,10 @@
             "ans": "",
             "na_score": 0.507109522819519,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6420156955718994,
+                  -3.1764097213745117
+            ]
       },
       "uit_000041_0": {
             "ans": "",
@@ -354,7 +372,10 @@
             "ans": "",
             "na_score": -4.826381683349609,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.9460597038269043,
+                  -3.675304889678955
+            ]
       },
       "uit_000046_0": {
             "ans": "",
@@ -411,7 +432,10 @@
             "ans": "",
             "na_score": 0.520684540271759,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.195937395095825,
+                  -1.7407113313674927
+            ]
       },
       "uit_000054_0": {
             "ans": "",
@@ -501,7 +525,10 @@
             "ans": "",
             "na_score": 0.5751025676727295,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.9337406158447266,
+                  -3.9917564392089844
+            ]
       },
       "uit_000066_0": {
             "ans": "",
@@ -615,7 +642,10 @@
             "ans": "",
             "na_score": 0.3118845224380493,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.440394401550293,
+                  -3.0049829483032227
+            ]
       },
       "uit_000081_0": {
             "ans": "",
@@ -675,7 +705,10 @@
             "ans": "",
             "na_score": 0.5989420413970947,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6476131677627563,
+                  -1.2305392026901245
+            ]
       },
       "uit_000089_0": {
             "ans": "",
@@ -696,7 +729,10 @@
             "ans": "",
             "na_score": 0.5410455465316772,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3043062686920166,
+                  -1.9921993017196655
+            ]
       },
       "uit_000092_0": {
             "ans": "",
@@ -750,7 +786,10 @@
             "ans": "",
             "na_score": 0.4231454133987427,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.237395763397217,
+                  -2.9685041904449463
+            ]
       },
       "uit_000099_0": {
             "ans": "",
@@ -765,7 +804,10 @@
             "ans": "",
             "na_score": 0.5739413499832153,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7659189701080322,
+                  -1.4078530073165894
+            ]
       },
       "uit_000101_0": {
             "ans": "",
@@ -792,7 +834,10 @@
             "ans": "",
             "na_score": 0.5735197067260742,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4521138668060303,
+                  -1.097853660583496
+            ]
       },
       "uit_000105_0": {
             "ans": "",
@@ -837,7 +882,10 @@
             "ans": "",
             "na_score": 0.31547510623931885,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.291241645812988,
+                  -3.892697334289551
+            ]
       },
       "uit_000112_0": {
             "ans": "",
@@ -903,13 +951,19 @@
             "ans": "",
             "na_score": 0.054361291229724884,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.959193706512451,
+                  -2.673189163208008
+            ]
       },
       "uit_000122_0": {
             "ans": "",
             "na_score": -3.1506094932556152,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0303330421447754,
+                  -2.7072036266326904
+            ]
       },
       "uit_000123_0": {
             "ans": "",
@@ -984,13 +1038,19 @@
             "ans": "",
             "na_score": 0.515760064125061,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.545910358428955,
+                  -3.1866722106933594
+            ]
       },
       "uit_000133_0": {
             "ans": "",
             "na_score": 0.1971942037343979,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2101746797561646,
+                  -0.8142480850219727
+            ]
       },
       "uit_000134_0": {
             "ans": "",
@@ -1014,7 +1074,10 @@
             "ans": "",
             "na_score": -0.4181162118911743,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9376273155212402,
+                  -2.7185895442962646
+            ]
       },
       "uit_000137_0": {
             "ans": "Paris-Rouen",
@@ -1050,7 +1113,10 @@
             "ans": "",
             "na_score": 0.5354626178741455,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.2258265018463135,
+                  -2.8104543685913086
+            ]
       },
       "uit_000142_0": {
             "ans": "",
@@ -1098,7 +1164,10 @@
             "ans": "",
             "na_score": 0.5989865660667419,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3495121002197266,
+                  -3.0387394428253174
+            ]
       },
       "uit_000149_0": {
             "ans": "",
@@ -1119,7 +1188,10 @@
             "ans": "",
             "na_score": 0.5963784456253052,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.545248031616211,
+                  -3.2081921100616455
+            ]
       },
       "uit_000152_0": {
             "ans": "",
@@ -1158,13 +1230,19 @@
             "ans": "",
             "na_score": -0.23525062203407288,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.126459121704102,
+                  -3.8297300338745117
+            ]
       },
       "uit_000157_0": {
             "ans": "",
             "na_score": -0.3711470365524292,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.01003885269165,
+                  -3.584211826324463
+            ]
       },
       "uit_000158_0": {
             "ans": "",
@@ -1281,13 +1359,19 @@
             "ans": "",
             "na_score": -2.3016114234924316,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.0734963417053223,
+                  -1.6043375730514526
+            ]
       },
       "uit_000173_0": {
             "ans": "",
             "na_score": 0.3561033010482788,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7375006675720215,
+                  -2.22259521484375
+            ]
       },
       "uit_000174_0": {
             "ans": "",
@@ -1347,31 +1431,46 @@
             "ans": "",
             "na_score": 0.5762984752655029,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7605996131896973,
+                  -3.3889718055725098
+            ]
       },
       "uit_000182_0": {
             "ans": "",
             "na_score": -1.0590629577636719,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5531489849090576,
+                  -3.200086832046509
+            ]
       },
       "uit_000183_0": {
             "ans": "",
             "na_score": 0.5715770125389099,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2802767753601074,
+                  -1.9060206413269043
+            ]
       },
       "uit_000184_0": {
             "ans": "",
             "na_score": -8.40072250366211,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.912583589553833,
+                  -3.5364320278167725
+            ]
       },
       "uit_000185_0": {
             "ans": "",
             "na_score": 0.4147552251815796,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9737627506256104,
+                  -1.6519595384597778
+            ]
       },
       "uit_000186_0": {
             "ans": "",
@@ -1410,7 +1509,10 @@
             "ans": "",
             "na_score": 0.22242175042629242,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.9215946197509766,
+                  -3.4406304359436035
+            ]
       },
       "uit_000191_0": {
             "ans": "",
@@ -1590,7 +1692,10 @@
             "ans": "",
             "na_score": 0.5731019973754883,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.9227393865585327,
+                  -0.6730601191520691
+            ]
       },
       "uit_000215_0": {
             "ans": "",
@@ -1731,7 +1836,10 @@
             "ans": "",
             "na_score": 0.44767114520072937,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.20808219909668,
+                  -3.8238441944122314
+            ]
       },
       "uit_000234_0": {
             "ans": "",
@@ -1743,7 +1851,10 @@
             "ans": "",
             "na_score": 0.5781922936439514,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.47837990522384644,
+                  -0.20669405162334442
+            ]
       },
       "uit_000236_0": {
             "ans": "",
@@ -1923,13 +2034,19 @@
             "ans": "",
             "na_score": 0.4277849793434143,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.41975998878479,
+                  -1.9816765785217285
+            ]
       },
       "uit_000259_0": {
             "ans": "",
             "na_score": 0.5905804634094238,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.924206018447876,
+                  -3.6219170093536377
+            ]
       },
       "uit_000260_0": {
             "ans": "",
@@ -1971,7 +2088,10 @@
             "ans": "",
             "na_score": -3.1602821350097656,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.533454418182373,
+                  -2.2589166164398193
+            ]
       },
       "uit_000265_0": {
             "ans": "",
@@ -1995,7 +2115,10 @@
             "ans": "",
             "na_score": 0.12121236324310303,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6131649017333984,
+                  -3.169950485229492
+            ]
       },
       "uit_000269_0": {
             "ans": "",
@@ -2010,7 +2133,10 @@
             "ans": "",
             "na_score": 0.6088461875915527,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.443946599960327,
+                  -2.043842077255249
+            ]
       },
       "uit_000271_0": {
             "ans": "",
@@ -2097,7 +2223,10 @@
             "ans": "",
             "na_score": 0.5596961975097656,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.5963996052742004,
+                  -0.34005171060562134
+            ]
       },
       "uit_000283_0": {
             "ans": "",
@@ -2109,7 +2238,10 @@
             "ans": "",
             "na_score": 0.180899977684021,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.0159502029418945,
+                  -1.5542794466018677
+            ]
       },
       "uit_000285_0": {
             "ans": "",
@@ -2154,7 +2286,10 @@
             "ans": "",
             "na_score": 0.5730036497116089,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7019007205963135,
+                  -3.247412919998169
+            ]
       },
       "uit_000291_0": {
             "ans": "",
@@ -2205,7 +2340,10 @@
             "ans": "",
             "na_score": 0.5783944725990295,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.03872013092041,
+                  -3.5492801666259766
+            ]
       },
       "uit_000298_0": {
             "ans": "",
@@ -2526,7 +2664,10 @@
             "ans": "",
             "na_score": -4.133807182312012,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.411949157714844,
+                  -4.347258567810059
+            ]
       },
       "uit_000339_0": {
             "ans": "",
@@ -2784,7 +2925,10 @@
             "ans": "",
             "na_score": 0.5824936628341675,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.738036036491394,
+                  -1.3248215913772583
+            ]
       },
       "uit_000372_0": {
             "ans": "các nhà hàng và món ăn ngon, thức ăn được chuẩn bị rất tỉ mỉ và trình bày rất khéo léo",
@@ -2841,7 +2985,10 @@
             "ans": "",
             "na_score": 0.40101170539855957,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3414664268493652,
+                  -1.9105801582336426
+            ]
       },
       "uit_000380_0": {
             "ans": "",
@@ -2853,7 +3000,10 @@
             "ans": "",
             "na_score": 0.5679084062576294,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.351649284362793,
+                  -2.038996934890747
+            ]
       },
       "uit_000382_0": {
             "ans": "",
@@ -2871,7 +3021,10 @@
             "ans": "",
             "na_score": 0.26050129532814026,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.6041295528411865,
+                  -2.2431118488311768
+            ]
       },
       "uit_000385_0": {
             "ans": "thay đổi một phần bờ sông Seine thành bãi biển nhân tạo với cát và các ghế vải gập",
@@ -2895,7 +3048,10 @@
             "ans": "",
             "na_score": -5.809063911437988,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8685543537139893,
+                  -2.3589773178100586
+            ]
       },
       "uit_000388_0": {
             "ans": "",
@@ -3024,7 +3180,10 @@
             "ans": "",
             "na_score": 0.5869535803794861,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2399650812149048,
+                  -0.8538774847984314
+            ]
       },
       "uit_000405_0": {
             "ans": "",
@@ -3036,7 +3195,10 @@
             "ans": "",
             "na_score": 0.4829045832157135,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7573933601379395,
+                  -2.2328526973724365
+            ]
       },
       "uit_000407_0": {
             "ans": "",
@@ -3063,7 +3225,10 @@
             "ans": "",
             "na_score": 0.4650856852531433,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.329281806945801,
+                  -2.92415452003479
+            ]
       },
       "uit_000411_0": {
             "ans": "",
@@ -3138,7 +3303,10 @@
             "ans": "",
             "na_score": -0.0729455053806305,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7877440452575684,
+                  -3.5996696949005127
+            ]
       },
       "uit_000420_0": {
             "ans": "một ý tưởng cách mạng",
@@ -3228,7 +3396,10 @@
             "ans": "",
             "na_score": 0.542711079120636,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.079961061477661,
+                  -2.475809335708618
+            ]
       },
       "uit_000431_0": {
             "ans": "",
@@ -3258,7 +3429,10 @@
             "ans": "",
             "na_score": 0.513659656047821,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.768779993057251,
+                  -1.39417564868927
+            ]
       },
       "uit_000435_0": {
             "ans": "",
@@ -3396,7 +3570,10 @@
             "ans": "",
             "na_score": 0.575588583946228,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.59061598777771,
+                  -1.0961540937423706
+            ]
       },
       "uit_000454_0": {
             "ans": "",
@@ -3567,7 +3744,10 @@
             "ans": "",
             "na_score": -0.23468869924545288,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9727342128753662,
+                  -1.5423294305801392
+            ]
       },
       "uit_000475_0": {
             "ans": "",
@@ -3597,7 +3777,10 @@
             "ans": "",
             "na_score": 0.45627307891845703,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.596529483795166,
+                  -3.3480780124664307
+            ]
       },
       "uit_000479_0": {
             "ans": "Dân số người Kanak",
@@ -3816,7 +3999,10 @@
             "ans": "",
             "na_score": 0.5701181888580322,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.724630117416382,
+                  -3.257608413696289
+            ]
       },
       "uit_000505_0": {
             "ans": "",
@@ -3873,7 +4059,10 @@
             "ans": "",
             "na_score": 0.2699122130870819,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.7630942463874817,
+                  -0.4880146086215973
+            ]
       },
       "uit_000512_0": {
             "ans": "Koumac, Nandaï, Tontouta, Plum, và Nouméa",
@@ -4035,7 +4224,10 @@
             "ans": "",
             "na_score": -0.055137746036052704,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.9794537425041199,
+                  -0.5879557132720947
+            ]
       },
       "uit_000531_0": {
             "ans": "30 °C",
@@ -4162,9 +4354,12 @@
       },
       "uit_000546_0": {
             "ans": "",
-            "na_score": 0.5737935304641724,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5737935304641724,
+            "na_score_verifier": [
+                  0.006159435957670212,
+                  0.27959713339805603
+            ]
       },
       "uit_000547_0": {
             "ans": "268.767",
@@ -4221,7 +4416,10 @@
             "ans": "",
             "na_score": -1.3222367763519287,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2788845300674438,
+                  -0.99130779504776
+            ]
       },
       "uit_000554_0": {
             "ans": "",
@@ -4668,7 +4866,10 @@
             "ans": "",
             "na_score": 0.5000098943710327,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5336105823516846,
+                  -3.2094922065734863
+            ]
       },
       "uit_000606_0": {
             "ans": "",
@@ -4743,13 +4944,19 @@
             "ans": "",
             "na_score": -1.3511728048324585,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6755138635635376,
+                  -1.301021695137024
+            ]
       },
       "uit_000615_0": {
             "ans": "",
             "na_score": -1.0896180868148804,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7668038606643677,
+                  -1.3418077230453491
+            ]
       },
       "uit_000616_0": {
             "ans": "",
@@ -4974,7 +5181,10 @@
             "ans": "",
             "na_score": 0.5830901265144348,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8925812244415283,
+                  -2.4843807220458984
+            ]
       },
       "uit_000643_0": {
             "ans": "",
@@ -4995,31 +5205,46 @@
             "ans": "",
             "na_score": 0.5894297361373901,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.752299189567566,
+                  -1.4190433025360107
+            ]
       },
       "uit_000646_0": {
             "ans": "",
             "na_score": 0.5493793487548828,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.251245021820068,
+                  -3.8584511280059814
+            ]
       },
       "uit_000647_0": {
             "ans": "",
             "na_score": 0.5625597238540649,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2719967365264893,
+                  -0.9463942646980286
+            ]
       },
       "uit_000648_0": {
             "ans": "",
             "na_score": 0.5860292911529541,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.465646743774414,
+                  -2.070406436920166
+            ]
       },
       "uit_000649_0": {
             "ans": "",
             "na_score": -1.4212102890014648,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.48961061239242554,
+                  -0.24981267750263214
+            ]
       },
       "uit_000650_0": {
             "ans": "",
@@ -5049,7 +5274,10 @@
             "ans": "",
             "na_score": 0.4925520420074463,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.943493604660034,
+                  -3.8194963932037354
+            ]
       },
       "uit_000654_0": {
             "ans": "",
@@ -5127,7 +5355,10 @@
             "ans": "",
             "na_score": 0.5786494016647339,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6903579235076904,
+                  -3.4327800273895264
+            ]
       },
       "uit_000664_0": {
             "ans": "",
@@ -5142,7 +5373,10 @@
             "ans": "",
             "na_score": -1.276890516281128,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.0969338417053223,
+                  -0.8246088624000549
+            ]
       },
       "uit_000666_0": {
             "ans": "",
@@ -5247,7 +5481,10 @@
             "ans": "",
             "na_score": 0.587753176689148,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.662750720977783,
+                  -2.131791353225708
+            ]
       },
       "uit_000679_0": {
             "ans": "",
@@ -5571,7 +5808,10 @@
             "ans": "",
             "na_score": 0.5868231058120728,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5294344425201416,
+                  -3.1247775554656982
+            ]
       },
       "uit_000718_0": {
             "ans": "Anh Quốc công nhận tình trạng độc lập của Hoa Kỳ và nhượng lại các lãnh thổ ở phía nam của Ngũ Đại Hồ cho Hoa Kỳ",
@@ -5586,7 +5826,10 @@
             "ans": "",
             "na_score": 0.5808182954788208,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.8604682683944702,
+                  -1.5492128133773804
+            ]
       },
       "uit_000720_0": {
             "ans": "",
@@ -5802,7 +6045,10 @@
             "ans": "",
             "na_score": -1.0665159225463867,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.0090370178222656,
+                  -0.7641768455505371
+            ]
       },
       "uit_000746_0": {
             "ans": "",
@@ -5838,19 +6084,28 @@
             "ans": "",
             "na_score": -1.9163596630096436,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.8523744344711304,
+                  -1.366370439529419
+            ]
       },
       "uit_000751_0": {
             "ans": "",
             "na_score": 0.5520204305648804,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6661335229873657,
+                  -1.4060235023498535
+            ]
       },
       "uit_000752_0": {
             "ans": "",
             "na_score": 0.46082550287246704,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4282519817352295,
+                  -3.1669280529022217
+            ]
       },
       "uit_000753_0": {
             "ans": "",
@@ -5901,7 +6156,10 @@
             "ans": "",
             "na_score": 0.579140305519104,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3718838691711426,
+                  -2.185591459274292
+            ]
       },
       "uit_000760_0": {
             "ans": "",
@@ -5913,7 +6171,10 @@
             "ans": "",
             "na_score": 0.5993056297302246,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.266684055328369,
+                  -2.9488112926483154
+            ]
       },
       "uit_000762_0": {
             "ans": "sự kết hợp các chính sách của các chính phủ Tự do kế tiếp nhau, dẫn đến hình thành một bản sắc Canada mới, biểu thị thông qua việc chấp thuận quốc kỳ lá phong hiện nay vào năm 1965, thi hành song ngữ chính thức (tiếng Anh và tiếng Pháp) vào năm 1969, và lập thể chế đa nguyên văn hóa",
@@ -6048,7 +6309,10 @@
             "ans": "",
             "na_score": -2.17103910446167,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.46623820066452026,
+                  -0.24298641085624695
+            ]
       },
       "uit_000779_0": {
             "ans": "Thảm sát trường Bách khoa École",
@@ -6069,7 +6333,10 @@
             "ans": "",
             "na_score": -0.6761850118637085,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.221686363220215,
+                  -2.858689308166504
+            ]
       },
       "uit_000782_0": {
             "ans": "",
@@ -6105,7 +6372,10 @@
             "ans": "",
             "na_score": 0.5310921669006348,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.02000093460083,
+                  -2.57515549659729
+            ]
       },
       "uit_000787_0": {
             "ans": "",
@@ -6177,7 +6447,10 @@
             "ans": "",
             "na_score": 0.5908599495887756,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.959561824798584,
+                  -2.4390616416931152
+            ]
       },
       "uit_000796_0": {
             "ans": "Kể từ năm 1925, Canada tuyên bố chủ quyền với phần thuộc vùng Bắc Cực nằm giữa 60°T và 141°T, song yêu sách này không được công nhận phổ biến. Canada là nơi có khu định cư viễn bắc nhất của thế giới",
@@ -6219,7 +6492,10 @@
             "ans": "",
             "na_score": -1.0175275802612305,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.165303945541382,
+                  -2.6420857906341553
+            ]
       },
       "uit_000801_0": {
             "ans": "",
@@ -6300,7 +6576,10 @@
             "ans": "",
             "na_score": 0.5866420865058899,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.6512240171432495,
+                  -0.2658860683441162
+            ]
       },
       "uit_000812_0": {
             "ans": "",
@@ -6372,7 +6651,10 @@
             "ans": "",
             "na_score": 0.5701159834861755,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.062463760375977,
+                  -3.6569979190826416
+            ]
       },
       "uit_000821_0": {
             "ans": "",
@@ -6387,13 +6669,19 @@
             "ans": "",
             "na_score": 0.5914214849472046,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.4908372163772583,
+                  -0.11377853900194168
+            ]
       },
       "uit_000823_0": {
             "ans": "",
             "na_score": 0.4932159185409546,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3183937072753906,
+                  -3.0341408252716064
+            ]
       },
       "uit_000824_0": {
             "ans": "vàng, niken, nhôm, thép, quặng sắt, than cốc, và chì",
@@ -6408,13 +6696,19 @@
             "ans": "",
             "na_score": -1.159729242324829,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.14426851272583,
+                  -1.7343753576278687
+            ]
       },
       "uit_000826_0": {
             "ans": "",
             "na_score": 0.4930289387702942,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.721710443496704,
+                  -2.1602184772491455
+            ]
       },
       "uit_000827_0": {
             "ans": "",
@@ -6429,7 +6723,10 @@
             "ans": "",
             "na_score": 0.5032247304916382,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.0450825691223145,
+                  -3.8203229904174805
+            ]
       },
       "uit_000829_0": {
             "ans": "",
@@ -6441,7 +6738,10 @@
             "ans": "",
             "na_score": 0.5883304476737976,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4216079711914062,
+                  -1.031899333000183
+            ]
       },
       "uit_000831_0": {
             "ans": "",
@@ -6483,7 +6783,10 @@
             "ans": "",
             "na_score": -0.9765830636024475,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.373808860778809,
+                  -4.018612861633301
+            ]
       },
       "uit_000836_0": {
             "ans": "",
@@ -6618,7 +6921,10 @@
             "ans": "",
             "na_score": 0.4837234616279602,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3264575004577637,
+                  -2.8608343601226807
+            ]
       },
       "uit_000853_0": {
             "ans": "Hiến pháp Canada là pháp luật tối cao của quốc gia, và gồm có các bản văn bằng văn bản và các quy ước bất thành văn. Đạo luật Hiến pháp 1867 (trước năm 1982 gọi là Đạo luật Bắc Mỹ thuộc Anh",
@@ -6660,7 +6966,10 @@
             "ans": "",
             "na_score": 0.5753276348114014,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4238462448120117,
+                  -1.1303848028182983
+            ]
       },
       "uit_000858_0": {
             "ans": "",
@@ -6774,7 +7083,10 @@
             "ans": "",
             "na_score": -0.7108217477798462,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.462799549102783,
+                  -4.228653907775879
+            ]
       },
       "uit_000873_0": {
             "ans": "",
@@ -6921,7 +7233,10 @@
             "ans": "",
             "na_score": 0.5761474370956421,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.0718026161193848,
+                  -0.5921673774719238
+            ]
       },
       "uit_000892_0": {
             "ans": "",
@@ -7053,7 +7368,10 @@
             "ans": "",
             "na_score": 0.13362596929073334,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7833993434906006,
+                  -3.488199472427368
+            ]
       },
       "uit_000910_0": {
             "ans": "",
@@ -7143,7 +7461,10 @@
             "ans": "",
             "na_score": -1.8129425048828125,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.236241579055786,
+                  -2.9872939586639404
+            ]
       },
       "uit_000922_0": {
             "ans": "",
@@ -7416,7 +7737,10 @@
             "ans": "",
             "na_score": 0.5916556715965271,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9772186279296875,
+                  -1.5836138725280762
+            ]
       },
       "uit_000956_0": {
             "ans": "",
@@ -7434,13 +7758,19 @@
             "ans": "",
             "na_score": 0.5898557901382446,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5459563732147217,
+                  -1.3170868158340454
+            ]
       },
       "uit_000959_0": {
             "ans": "",
             "na_score": 0.555554986000061,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5567755699157715,
+                  -3.270043134689331
+            ]
       },
       "uit_000960_0": {
             "ans": "",
@@ -7455,13 +7785,19 @@
             "ans": "",
             "na_score": 0.5875744819641113,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8185999393463135,
+                  -2.353421688079834
+            ]
       },
       "uit_000962_0": {
             "ans": "",
             "na_score": 0.5987497568130493,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.9916241765022278,
+                  -0.7493175268173218
+            ]
       },
       "uit_000963_0": {
             "ans": "",
@@ -7473,7 +7809,10 @@
             "ans": "",
             "na_score": 0.5833361148834229,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.709866762161255,
+                  -3.354004383087158
+            ]
       },
       "uit_000965_0": {
             "ans": "",
@@ -7503,7 +7842,10 @@
             "ans": "",
             "na_score": 0.5617978572845459,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.652347207069397,
+                  -0.30220451951026917
+            ]
       },
       "uit_000968_1": {
             "ans": "",
@@ -7560,7 +7902,10 @@
             "ans": "",
             "na_score": 0.5830748081207275,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.7959532737731934,
+                  -0.42295607924461365
+            ]
       },
       "uit_000972_1": {
             "ans": "",
@@ -7635,7 +7980,10 @@
             "ans": "",
             "na_score": 0.5059560537338257,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.1278934478759766,
+                  -1.7514995336532593
+            ]
       },
       "uit_000978_0": {
             "ans": "",
@@ -7920,13 +8268,19 @@
             "ans": "",
             "na_score": 0.4188883900642395,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.0917458534240723,
+                  -1.778111457824707
+            ]
       },
       "uit_001011_0": {
             "ans": "",
             "na_score": 0.5724244713783264,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.8222570419311523,
+                  -3.575827121734619
+            ]
       },
       "uit_001012_0": {
             "ans": "",
@@ -7941,7 +8295,10 @@
             "ans": "",
             "na_score": -3.830711603164673,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.675255060195923,
+                  -2.2606894969940186
+            ]
       },
       "uit_001014_0": {
             "ans": "",
@@ -7983,7 +8340,10 @@
             "ans": "",
             "na_score": 0.456159770488739,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.299738883972168,
+                  -4.158389091491699
+            ]
       },
       "uit_001019_0": {
             "ans": "nước Ả Rập",
@@ -8016,19 +8376,28 @@
             "ans": "",
             "na_score": 0.2545183002948761,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.1922078132629395,
+                  -4.005251884460449
+            ]
       },
       "uit_001023_0": {
             "ans": "",
             "na_score": -0.3331281244754791,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.3017072677612305,
+                  -4.070144176483154
+            ]
       },
       "uit_001024_0": {
             "ans": "",
             "na_score": 0.16420301795005798,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.178242206573486,
+                  -3.7839136123657227
+            ]
       },
       "uit_001025_0": {
             "ans": "",
@@ -8073,13 +8442,19 @@
             "ans": "",
             "na_score": 0.5681732892990112,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.372635841369629,
+                  -1.94691002368927
+            ]
       },
       "uit_001031_0": {
             "ans": "",
             "na_score": -0.25048843026161194,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.8146450519561768,
+                  -3.5923197269439697
+            ]
       },
       "uit_001032_0": {
             "ans": "",
@@ -8160,7 +8535,10 @@
             "ans": "",
             "na_score": 0.5826599597930908,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4998526573181152,
+                  -3.195202112197876
+            ]
       },
       "uit_001042_0": {
             "ans": "",
@@ -8241,19 +8619,28 @@
             "ans": "",
             "na_score": 0.565332293510437,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.032212972640991,
+                  -2.6488966941833496
+            ]
       },
       "uit_001053_0": {
             "ans": "",
             "na_score": -0.85896897315979,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.254401922225952,
+                  -2.84546160697937
+            ]
       },
       "uit_001054_0": {
             "ans": "",
             "na_score": -0.4059382975101471,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6539485454559326,
+                  -3.3494863510131836
+            ]
       },
       "uit_001055_0": {
             "ans": "5 tỷ dollar",
@@ -8268,7 +8655,10 @@
             "ans": "",
             "na_score": 0.5817210674285889,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.360723853111267,
+                  -1.1262092590332031
+            ]
       },
       "uit_001057_0": {
             "ans": "",
@@ -8301,7 +8691,10 @@
             "ans": "",
             "na_score": 0.5613076686859131,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.349902868270874,
+                  -3.18872332572937
+            ]
       },
       "uit_001061_0": {
             "ans": "5 tỷ dollar",
@@ -8361,7 +8754,10 @@
             "ans": "",
             "na_score": -5.948758125305176,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.313991546630859,
+                  -3.9251370429992676
+            ]
       },
       "uit_001068_0": {
             "ans": "",
@@ -8403,13 +8799,19 @@
             "ans": "",
             "na_score": 0.5442244410514832,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.857614517211914,
+                  -2.5071661472320557
+            ]
       },
       "uit_001073_0": {
             "ans": "",
             "na_score": -1.1771738529205322,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.55336594581604,
+                  -3.2341556549072266
+            ]
       },
       "uit_001074_0": {
             "ans": "",
@@ -8583,7 +8985,10 @@
             "ans": "",
             "na_score": 0.5712687373161316,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.0458362102508545,
+                  -1.6701855659484863
+            ]
       },
       "uit_001096_0": {
             "ans": "",
@@ -8595,7 +9000,10 @@
             "ans": "",
             "na_score": 0.5772566795349121,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.72726309299469,
+                  -1.3035694360733032
+            ]
       },
       "uit_001098_0": {
             "ans": "Ngày 3 tháng 8, Liên đoàn Ả Rập thông qua nghị quyết của riêng mình lên án cuộc xâm lược và đòi Iraq rút quân. Nghị quyết của Liên đoàn Ả Rập cũng kêu gọi tìm ra một giải pháp cho cuộc xung đột từ bên trong Liên đoàn Ả Rập, và cảnh báo chống lại sự can thiệp từ bên ngoài",
@@ -8647,9 +9055,12 @@
       },
       "uit_001104_0": {
             "ans": "",
-            "na_score": 0.5955020189285278,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5955020189285278,
+            "na_score_verifier": [
+                  -0.3727383017539978,
+                  0.5817425847053528
+            ]
       },
       "uit_001105_0": {
             "ans": "nhóm họp, thông qua Nghị quyết 660, lên án cuộc xâm lược và yêu cầu Iraq rút quân",
@@ -8826,7 +9237,10 @@
             "ans": "",
             "na_score": 0.18237575888633728,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.552020311355591,
+                  -2.210143804550171
+            ]
       },
       "uit_001119_0": {
             "ans": "",
@@ -8964,7 +9378,10 @@
             "ans": "",
             "na_score": -0.11486577242612839,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3539586067199707,
+                  -3.071004867553711
+            ]
       },
       "uit_001138_0": {
             "ans": "",
@@ -9054,7 +9471,10 @@
             "ans": "",
             "na_score": 0.582543671131134,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.503817319869995,
+                  -2.281836986541748
+            ]
       },
       "uit_001149_0": {
             "ans": "",
@@ -9120,7 +9540,10 @@
             "ans": "",
             "na_score": -0.059399448335170746,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8211617469787598,
+                  -2.5338802337646484
+            ]
       },
       "uit_001158_0": {
             "ans": "",
@@ -9165,7 +9588,10 @@
             "ans": "",
             "na_score": 0.43277281522750854,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.5010397434234619,
+                  -0.12012624740600586
+            ]
       },
       "uit_001164_0": {
             "ans": "",
@@ -9222,13 +9648,19 @@
             "ans": "",
             "na_score": 0.5940951108932495,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.579061985015869,
+                  -4.182404518127441
+            ]
       },
       "uit_001171_0": {
             "ans": "",
             "na_score": 0.5785112977027893,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5686677694320679,
+                  -1.318618655204773
+            ]
       },
       "uit_001172_0": {
             "ans": "",
@@ -9243,7 +9675,10 @@
             "ans": "",
             "na_score": 0.5693044662475586,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.818101644515991,
+                  -2.67285418510437
+            ]
       },
       "uit_001174_0": {
             "ans": "",
@@ -9285,7 +9720,10 @@
             "ans": "",
             "na_score": -1.7435452938079834,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.532055616378784,
+                  -2.2384278774261475
+            ]
       },
       "uit_001179_0": {
             "ans": "",
@@ -9330,7 +9768,10 @@
             "ans": "",
             "na_score": -0.017011206597089767,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1407129764556885,
+                  -0.7803710699081421
+            ]
       },
       "uit_001185_0": {
             "ans": "",
@@ -9432,13 +9873,19 @@
             "ans": "",
             "na_score": 0.38239234685897827,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.924012184143066,
+                  -4.693264961242676
+            ]
       },
       "uit_001200_0": {
             "ans": "",
             "na_score": 0.36715221405029297,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.282179355621338,
+                  -3.9946467876434326
+            ]
       },
       "uit_001201_0": {
             "ans": "",
@@ -9477,19 +9924,28 @@
             "ans": "",
             "na_score": 0.5617179870605469,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.22755888104438782,
+                  -0.0008749468252062798
+            ]
       },
       "uit_001205_0": {
             "ans": "",
             "na_score": 0.31247013807296753,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.168652296066284,
+                  -1.8307636976242065
+            ]
       },
       "uit_001205_1": {
             "ans": "",
             "na_score": 0.5776759386062622,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.168652296066284,
+                  -1.8307636976242065
+            ]
       },
       "uit_001206_0": {
             "ans": "",
@@ -9556,15 +10012,21 @@
       },
       "uit_001210_0": {
             "ans": "",
-            "na_score": 0.24737322330474854,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.24737322330474854,
+            "na_score_verifier": [
+                  0.029603298753499985,
+                  0.0830005407333374
+            ]
       },
       "uit_001210_1": {
             "ans": "",
-            "na_score": 0.5647284984588623,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5647284984588623,
+            "na_score_verifier": [
+                  0.029603298753499985,
+                  0.0830005407333374
+            ]
       },
       "uit_001211_0": {
             "ans": "",
@@ -9690,19 +10152,28 @@
             "ans": "",
             "na_score": 0.5779242515563965,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6074657440185547,
+                  -1.217772126197815
+            ]
       },
       "uit_001228_0": {
             "ans": "",
             "na_score": 0.44798433780670166,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.856050491333008,
+                  -2.30381178855896
+            ]
       },
       "uit_001229_0": {
             "ans": "",
             "na_score": 0.5772863626480103,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.6109278202056885,
+                  -2.11505126953125
+            ]
       },
       "uit_001230_0": {
             "ans": "",
@@ -9774,7 +10245,10 @@
             "ans": "",
             "na_score": 0.5804458856582642,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.174424886703491,
+                  -1.799772024154663
+            ]
       },
       "uit_001240_0": {
             "ans": "",
@@ -9795,7 +10269,10 @@
             "ans": "",
             "na_score": -0.5214031338691711,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.71453857421875,
+                  -3.4726083278656006
+            ]
       },
       "uit_001243_0": {
             "ans": "",
@@ -9894,7 +10371,10 @@
             "ans": "",
             "na_score": 0.5029609203338623,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.177844285964966,
+                  -1.7098461389541626
+            ]
       },
       "uit_001256_0": {
             "ans": "",
@@ -9975,7 +10455,10 @@
             "ans": "",
             "na_score": 0.5688707828521729,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.759960412979126,
+                  -1.329562783241272
+            ]
       },
       "uit_001262_1": {
             "ans": "",
@@ -10062,7 +10545,10 @@
             "ans": "",
             "na_score": 0.39969563484191895,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.594188690185547,
+                  -3.239062786102295
+            ]
       },
       "uit_001270_0": {
             "ans": "",
@@ -10095,7 +10581,10 @@
             "ans": "",
             "na_score": 0.04040496423840523,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1935408115386963,
+                  -2.9194717407226562
+            ]
       },
       "uit_001274_0": {
             "ans": "",
@@ -10171,9 +10660,12 @@
       },
       "uit_001283_0": {
             "ans": "",
-            "na_score": 0.5861139893531799,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5861139893531799,
+            "na_score_verifier": [
+                  -0.2629799544811249,
+                  0.5069822669029236
+            ]
       },
       "uit_001284_0": {
             "ans": "",
@@ -10218,7 +10710,10 @@
             "ans": "",
             "na_score": 0.5912120342254639,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.746410369873047,
+                  -2.3874058723449707
+            ]
       },
       "uit_001290_0": {
             "ans": "",
@@ -10257,19 +10752,28 @@
             "ans": "",
             "na_score": 0.5772805213928223,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.021620750427246,
+                  -1.6299091577529907
+            ]
       },
       "uit_001296_0": {
             "ans": "",
             "na_score": 0.5807907581329346,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.5476033687591553,
+                  -2.1264865398406982
+            ]
       },
       "uit_001297_0": {
             "ans": "",
             "na_score": 0.543266773223877,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7223161458969116,
+                  -1.465453028678894
+            ]
       },
       "uit_001298_0": {
             "ans": "",
@@ -10347,7 +10851,10 @@
             "ans": "",
             "na_score": 0.486413836479187,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.330353736877441,
+                  -4.066908836364746
+            ]
       },
       "uit_001308_0": {
             "ans": "",
@@ -10390,9 +10897,12 @@
       },
       "uit_001313_0": {
             "ans": "",
-            "na_score": 0.5703234672546387,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5703234672546387,
+            "na_score_verifier": [
+                  -0.4025734066963196,
+                  0.6181281208992004
+            ]
       },
       "uit_001314_0": {
             "ans": "",
@@ -10491,7 +11001,10 @@
             "ans": "",
             "na_score": 0.5174497961997986,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1902759075164795,
+                  -0.8173470497131348
+            ]
       },
       "uit_001327_0": {
             "ans": "",
@@ -10542,7 +11055,10 @@
             "ans": "",
             "na_score": 0.5642093420028687,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.803821563720703,
+                  -2.4969396591186523
+            ]
       },
       "uit_001334_0": {
             "ans": "",
@@ -10557,7 +11073,10 @@
             "ans": "",
             "na_score": 0.5797513127326965,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.21897786855697632,
+                  -0.00986494217067957
+            ]
       },
       "uit_001336_0": {
             "ans": "",
@@ -10581,7 +11100,10 @@
             "ans": "",
             "na_score": 0.5172296762466431,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.9323604702949524,
+                  -0.6826210021972656
+            ]
       },
       "uit_001339_0": {
             "ans": "",
@@ -10698,7 +11220,10 @@
             "ans": "",
             "na_score": 0.3795243501663208,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0819835662841797,
+                  -2.6378276348114014
+            ]
       },
       "uit_001353_1": {
             "ans": "",
@@ -10770,7 +11295,10 @@
             "ans": "",
             "na_score": -1.3733477592468262,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.405519485473633,
+                  -3.0219390392303467
+            ]
       },
       "uit_001358_1": {
             "ans": "",
@@ -10800,7 +11328,10 @@
             "ans": "",
             "na_score": 0.5633524060249329,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.681394100189209,
+                  -0.445883572101593
+            ]
       },
       "uit_001361_0": {
             "ans": "",
@@ -10929,13 +11460,19 @@
             "ans": "",
             "na_score": 0.15323615074157715,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.909748077392578,
+                  -2.368098020553589
+            ]
       },
       "uit_001377_0": {
             "ans": "",
             "na_score": -2.0818634033203125,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.793851613998413,
+                  -3.229529619216919
+            ]
       },
       "uit_001378_0": {
             "ans": "",
@@ -10950,7 +11487,10 @@
             "ans": "",
             "na_score": -0.04607764631509781,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4630093574523926,
+                  -2.946503162384033
+            ]
       },
       "uit_001380_0": {
             "ans": "",
@@ -11112,7 +11652,10 @@
             "ans": "",
             "na_score": 0.5867530703544617,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5641231536865234,
+                  -3.3206753730773926
+            ]
       },
       "uit_001399_0": {
             "ans": "các ion clorua và natri hòa tan) nhất thời gia tăng nồng độ các ion này trong máu. Điều này kích thích thận gia tăng hoạt động bài tiết natri, nhưng nồng độ natri của nước biển là cao hơn khả năng cô tối đa của thận. Cuối cùng, với lượng gia tăng thêm nữa của nước biển thì nồng độ natri trong máu sẽ vượt ngưỡng gây ngộ độc, nó loại bỏ nước từ mọi tế bào và gây trở ngại cho truyền dẫn tín hiệu thần kinh; gây ra ngập máu và loạn nhịp tim, có",
@@ -11316,7 +11859,10 @@
             "ans": "",
             "na_score": 0.5694683790206909,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0666627883911133,
+                  -2.656249523162842
+            ]
       },
       "uit_001424_0": {
             "ans": "",
@@ -11389,9 +11935,12 @@
       },
       "uit_001432_0": {
             "ans": "",
-            "na_score": 0.5247889757156372,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5247889757156372,
+            "na_score_verifier": [
+                  0.13678814470767975,
+                  0.16185367107391357
+            ]
       },
       "uit_001433_0": {
             "ans": "",
@@ -11535,7 +12084,10 @@
             "ans": "",
             "na_score": 0.5734310150146484,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.25589168071746826,
+                  0.030221007764339447
+            ]
       },
       "uit_001451_0": {
             "ans": "",
@@ -11661,13 +12213,19 @@
             "ans": "",
             "na_score": 0.37833255529403687,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.8107374906539917,
+                  -1.1922935247421265
+            ]
       },
       "uit_001467_0": {
             "ans": "",
             "na_score": -2.773533821105957,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3475821018218994,
+                  -2.001235008239746
+            ]
       },
       "uit_001468_0": {
             "ans": "Mỹ Latinh. Nhiều đồn lũy và các bức tường thành lớn được xây dựng như La Fortaleza, El Castillo, San Felipe del Morro hay El Castillo de San Cristobal để bảo vệ Puerto Rico khỏi sự dòm ngó của các cường quốc thù địch như Pháp, Hà Lan và Anh. Những nước này",
@@ -11802,7 +12360,10 @@
             "ans": "",
             "na_score": 0.5805277824401855,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.685177803039551,
+                  -2.245718479156494
+            ]
       },
       "uit_001484_0": {
             "ans": "",
@@ -11928,7 +12489,10 @@
             "ans": "",
             "na_score": 0.506804347038269,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.5931143760681152,
+                  -2.278698444366455
+            ]
       },
       "uit_001500_0": {
             "ans": "",
@@ -11949,7 +12513,10 @@
             "ans": "",
             "na_score": 0.4125484824180603,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.5375816822052,
+                  -2.23427677154541
+            ]
       },
       "uit_001503_0": {
             "ans": "",
@@ -11964,7 +12531,10 @@
             "ans": "",
             "na_score": 0.5821102857589722,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.9505739212036133,
+                  -3.470320463180542
+            ]
       },
       "uit_001505_0": {
             "ans": "",
@@ -12057,7 +12627,10 @@
             "ans": "",
             "na_score": 0.520686149597168,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2808197736740112,
+                  -1.0263112783432007
+            ]
       },
       "uit_001517_0": {
             "ans": "",
@@ -12141,7 +12714,10 @@
             "ans": "",
             "na_score": 0.5673402547836304,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.4680824279785156,
+                  -1.9702459573745728
+            ]
       },
       "uit_001527_0": {
             "ans": "",
@@ -12177,7 +12753,10 @@
             "ans": "",
             "na_score": -1.2975934743881226,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.504225730895996,
+                  -2.051483631134033
+            ]
       },
       "uit_001532_0": {
             "ans": "",
@@ -12597,7 +13176,10 @@
             "ans": "",
             "na_score": 0.5709037780761719,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3327919244766235,
+                  -1.139070749282837
+            ]
       },
       "uit_001583_0": {
             "ans": "",
@@ -12810,7 +13392,10 @@
             "ans": "",
             "na_score": -0.3825932741165161,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.540865421295166,
+                  -4.205341815948486
+            ]
       },
       "uit_001610_0": {
             "ans": "",
@@ -12966,7 +13551,10 @@
             "ans": "",
             "na_score": 0.6093413829803467,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.796205997467041,
+                  -4.8185343742370605
+            ]
       },
       "uit_001624_0": {
             "ans": "",
@@ -13077,7 +13665,10 @@
             "ans": "",
             "na_score": 0.5808189511299133,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5535504817962646,
+                  -3.161475658416748
+            ]
       },
       "uit_001635_0": {
             "ans": "",
@@ -13494,13 +14085,19 @@
             "ans": "",
             "na_score": 0.48885223269462585,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5049986839294434,
+                  -3.12022066116333
+            ]
       },
       "uit_001685_0": {
             "ans": "",
             "na_score": 0.4541310667991638,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.8779706954956055,
+                  -3.678344964981079
+            ]
       },
       "uit_001686_0": {
             "ans": "",
@@ -13551,7 +14148,10 @@
             "ans": "",
             "na_score": -0.8962743282318115,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.41606605052948,
+                  -1.228150486946106
+            ]
       },
       "uit_001692_0": {
             "ans": "",
@@ -13596,7 +14196,10 @@
             "ans": "",
             "na_score": 0.5008503198623657,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.931396484375,
+                  -0.7280604243278503
+            ]
       },
       "uit_001698_0": {
             "ans": "",
@@ -13611,7 +14214,10 @@
             "ans": "",
             "na_score": 0.5746310949325562,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.209350347518921,
+                  -1.8629714250564575
+            ]
       },
       "uit_001700_0": {
             "ans": "khỏi Tbilisi",
@@ -13635,7 +14241,10 @@
             "ans": "",
             "na_score": 0.08140377700328827,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.591945648193359,
+                  -4.318883419036865
+            ]
       },
       "uit_001703_0": {
             "ans": "",
@@ -13683,7 +14292,10 @@
             "ans": "",
             "na_score": -1.596123218536377,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7170493602752686,
+                  -2.382566213607788
+            ]
       },
       "uit_001709_0": {
             "ans": "",
@@ -13725,7 +14337,10 @@
             "ans": "",
             "na_score": 0.4784107804298401,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.2355217933654785,
+                  -2.970867872238159
+            ]
       },
       "uit_001714_0": {
             "ans": "",
@@ -13983,7 +14598,10 @@
             "ans": "",
             "na_score": 0.5864502191543579,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.573291540145874,
+                  -3.2737789154052734
+            ]
       },
       "uit_001746_0": {
             "ans": "",
@@ -14220,7 +14838,10 @@
             "ans": "",
             "na_score": 0.09305636584758759,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.311086654663086,
+                  -2.9996230602264404
+            ]
       },
       "uit_001775_0": {
             "ans": "",
@@ -14247,13 +14868,19 @@
             "ans": "",
             "na_score": 0.5832982659339905,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.654536485671997,
+                  -1.405325174331665
+            ]
       },
       "uit_001779_0": {
             "ans": "",
             "na_score": 0.5822008848190308,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7358607053756714,
+                  -1.552323341369629
+            ]
       },
       "uit_001780_0": {
             "ans": "",
@@ -14325,7 +14952,10 @@
             "ans": "",
             "na_score": 0.44583722949028015,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.521040916442871,
+                  -2.018568754196167
+            ]
       },
       "uit_001787_1": {
             "ans": "",
@@ -14382,7 +15012,10 @@
             "ans": "",
             "na_score": 0.5801314115524292,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.328497886657715,
+                  -1.9631279706954956
+            ]
       },
       "uit_001791_0": {
             "ans": "",
@@ -14436,7 +15069,10 @@
             "ans": "",
             "na_score": 0.5782209634780884,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2213516235351562,
+                  -1.9071967601776123
+            ]
       },
       "uit_001794_1": {
             "ans": "",
@@ -14451,7 +15087,10 @@
             "ans": "",
             "na_score": -0.7652748227119446,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7082364559173584,
+                  -3.30812931060791
+            ]
       },
       "uit_001795_1": {
             "ans": "người từng được chỉ định làm cố vấn pháp lý của Negus",
@@ -14661,7 +15300,10 @@
             "ans": "",
             "na_score": 0.4613703489303589,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7888211011886597,
+                  -1.3828998804092407
+            ]
       },
       "uit_001814_0": {
             "ans": "",
@@ -14679,7 +15321,10 @@
             "ans": "",
             "na_score": -3.409010171890259,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.033092498779297,
+                  -1.4924031496047974
+            ]
       },
       "uit_001817_0": {
             "ans": "",
@@ -14706,7 +15351,10 @@
             "ans": "",
             "na_score": 0.1970117837190628,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8328211307525635,
+                  -2.523029327392578
+            ]
       },
       "uit_001821_0": {
             "ans": "",
@@ -14769,7 +15417,10 @@
             "ans": "",
             "na_score": 0.5892808437347412,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7287192344665527,
+                  -2.4881162643432617
+            ]
       },
       "uit_001829_0": {
             "ans": "France, revue de l'État nouveau",
@@ -14802,7 +15453,10 @@
             "ans": "",
             "na_score": 0.5704622268676758,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.1340718269348145,
+                  -1.73886239528656
+            ]
       },
       "uit_001833_0": {
             "ans": "cháu của Tướng Charles de Gaulle",
@@ -14883,7 +15537,10 @@
             "ans": "",
             "na_score": -0.9630118608474731,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.1012659072875977,
+                  -1.7551078796386719
+            ]
       },
       "uit_001843_0": {
             "ans": "Cuối năm 1942",
@@ -14928,7 +15585,10 @@
             "ans": "",
             "na_score": -2.276242256164551,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.4339730143547058,
+                  -0.13482831418514252
+            ]
       },
       "uit_001848_0": {
             "ans": "",
@@ -14985,7 +15645,10 @@
             "ans": "",
             "na_score": 0.12485217303037643,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.1968798637390137,
+                  -1.9751182794570923
+            ]
       },
       "uit_001855_0": {
             "ans": "",
@@ -15006,7 +15669,10 @@
             "ans": "",
             "na_score": 0.12594282627105713,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.8524179458618164,
+                  -3.628922462463379
+            ]
       },
       "uit_001858_0": {
             "ans": "những thanh niên Pháp",
@@ -15150,13 +15816,19 @@
             "ans": "",
             "na_score": 0.5969111919403076,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.607238531112671,
+                  -2.3510537147521973
+            ]
       },
       "uit_001869_0": {
             "ans": "",
             "na_score": 0.5821353793144226,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3054027557373047,
+                  -2.793649435043335
+            ]
       },
       "uit_001869_1": {
             "ans": "",
@@ -15192,7 +15864,10 @@
             "ans": "",
             "na_score": 0.5356290340423584,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.573629379272461,
+                  -2.073391914367676
+            ]
       },
       "uit_001872_0": {
             "ans": "Tháng 10 năm 1944 Mitterrand và Jacques Foccart",
@@ -15228,7 +15903,10 @@
             "ans": "",
             "na_score": -1.6815454959869385,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.338322639465332,
+                  -4.020957946777344
+            ]
       },
       "uit_001877_0": {
             "ans": "",
@@ -15357,7 +16035,10 @@
             "ans": "",
             "na_score": 0.6049931645393372,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.420983791351318,
+                  -4.286485195159912
+            ]
       },
       "uit_001893_0": {
             "ans": "11",
@@ -15405,7 +16086,10 @@
             "ans": "",
             "na_score": 0.16673466563224792,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.0609545707702637,
+                  -1.9496403932571411
+            ]
       },
       "uit_001899_0": {
             "ans": "",
@@ -15459,7 +16143,10 @@
             "ans": "",
             "na_score": 0.506831169128418,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4602444171905518,
+                  -3.1137263774871826
+            ]
       },
       "uit_001906_0": {
             "ans": "cựu đối thủ bên trong của Molletvà là cựu thành viên có tư tưởng cải cách của Đảng Cộng sản",
@@ -15516,7 +16203,10 @@
             "ans": "",
             "na_score": -0.9841203689575195,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.4057703018188477,
+                  -2.035036563873291
+            ]
       },
       "uit_001913_0": {
             "ans": "",
@@ -15606,7 +16296,10 @@
             "ans": "",
             "na_score": 0.39195725321769714,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5005288124084473,
+                  -3.191255569458008
+            ]
       },
       "uit_001924_0": {
             "ans": "",
@@ -15927,7 +16620,10 @@
             "ans": "",
             "na_score": 0.38243749737739563,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8049049377441406,
+                  -2.531475782394409
+            ]
       },
       "uit_001961_0": {
             "ans": "",
@@ -15948,7 +16644,10 @@
             "ans": "",
             "na_score": 0.4506993591785431,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6687506437301636,
+                  -1.28414785861969
+            ]
       },
       "uit_001964_0": {
             "ans": "",
@@ -16059,7 +16758,10 @@
             "ans": "",
             "na_score": 0.5666557550430298,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7980422973632812,
+                  -3.4725940227508545
+            ]
       },
       "uit_001977_0": {
             "ans": "",
@@ -16113,7 +16815,10 @@
             "ans": "",
             "na_score": 0.4702140688896179,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.240556240081787,
+                  -3.9086194038391113
+            ]
       },
       "uit_001985_0": {
             "ans": "",
@@ -16305,7 +17010,10 @@
             "ans": "",
             "na_score": 0.5881973505020142,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.271043300628662,
+                  -2.8880584239959717
+            ]
       },
       "uit_002009_0": {
             "ans": "",
@@ -16455,7 +17163,10 @@
             "ans": "",
             "na_score": 0.5380082726478577,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  5.4034199714660645,
+                  -5.045505046844482
+            ]
       },
       "uit_002022_0": {
             "ans": "",
@@ -16554,7 +17265,10 @@
             "ans": "",
             "na_score": 0.4228294789791107,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9174195528030396,
+                  -1.5186278820037842
+            ]
       },
       "uit_002026_0": {
             "ans": "",
@@ -16662,7 +17376,10 @@
             "ans": "",
             "na_score": -2.2755236625671387,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.247159481048584,
+                  -2.8687291145324707
+            ]
       },
       "uit_002039_0": {
             "ans": "năm 1971 bởi Đảng Xã hội để cố vấn cho các xã đang dưới quyền lãnh đạo của phe xã hội về các dự án cơ sở hạ tầng và dự án công cộng",
@@ -16785,7 +17502,10 @@
             "ans": "",
             "na_score": -0.5252902507781982,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8036627769470215,
+                  -2.5649468898773193
+            ]
       },
       "uit_002054_0": {
             "ans": "",
@@ -16842,13 +17562,19 @@
             "ans": "",
             "na_score": 0.5774476528167725,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.913569450378418,
+                  -3.5987484455108643
+            ]
       },
       "uit_002058_1": {
             "ans": "",
             "na_score": 0.5715402364730835,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.913569450378418,
+                  -3.5987484455108643
+            ]
       },
       "uit_002059_0": {
             "ans": "",
@@ -16884,7 +17610,10 @@
             "ans": "",
             "na_score": 0.5270357728004456,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9007058143615723,
+                  -2.515018939971924
+            ]
       },
       "uit_002061_1": {
             "ans": "",
@@ -16896,13 +17625,19 @@
             "ans": "",
             "na_score": 0.5739902257919312,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.890921115875244,
+                  -3.6369287967681885
+            ]
       },
       "uit_002062_1": {
             "ans": "",
             "na_score": 0.5747872591018677,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.890921115875244,
+                  -3.6369287967681885
+            ]
       },
       "uit_002063_0": {
             "ans": "",
@@ -16965,7 +17700,10 @@
             "ans": "",
             "na_score": 0.5129411816596985,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.540184497833252,
+                  -3.167374849319458
+            ]
       },
       "uit_002069_0": {
             "ans": "Paris ủng hộ tổng thống Rwanda Juvénal Habyarimana",
@@ -17019,7 +17757,10 @@
             "ans": "",
             "na_score": -2.6085307598114014,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.149350166320801,
+                  -3.836350917816162
+            ]
       },
       "uit_002076_0": {
             "ans": "tấn công khủng bố đầu tiên vào đất nước mình",
@@ -17043,7 +17784,10 @@
             "ans": "",
             "na_score": 0.5854690670967102,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4113593101501465,
+                  -3.189058780670166
+            ]
       },
       "uit_002079_0": {
             "ans": "đã tìm cách tiếp cận một đoạn video được thực hiện ở phiên xét xử đầu tiên khi điệp viên Pháp thú nhận dính líu, một cuộc chiến pháp lý mà họ đã giành phần thắng năm 2006",
@@ -17106,7 +17850,10 @@
             "ans": "",
             "na_score": 0.47006362676620483,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.795965194702148,
+                  -4.639682769775391
+            ]
       },
       "uit_002087_0": {
             "ans": "",
@@ -17250,7 +17997,10 @@
             "ans": "",
             "na_score": 0.5770427584648132,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.6664161682128906,
+                  -2.298854351043701
+            ]
       },
       "uit_002105_0": {
             "ans": "",
@@ -17298,7 +18048,10 @@
             "ans": "",
             "na_score": 0.40286847949028015,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.3278709352016449,
+                  -0.11434797197580338
+            ]
       },
       "uit_002111_0": {
             "ans": "",
@@ -17319,7 +18072,10 @@
             "ans": "",
             "na_score": 0.5643805265426636,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.090301275253296,
+                  -1.6947108507156372
+            ]
       },
       "uit_002114_0": {
             "ans": "",
@@ -17352,7 +18108,10 @@
             "ans": "",
             "na_score": 0.5799151659011841,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1060011386871338,
+                  -0.8696547746658325
+            ]
       },
       "uit_002118_0": {
             "ans": "",
@@ -17364,7 +18123,10 @@
             "ans": "",
             "na_score": 0.569778561592102,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5828800201416016,
+                  -1.3642765283584595
+            ]
       },
       "uit_002120_0": {
             "ans": "",
@@ -17469,7 +18231,10 @@
             "ans": "",
             "na_score": -3.8531885147094727,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3657081127166748,
+                  -0.9928483963012695
+            ]
       },
       "uit_002133_0": {
             "ans": "",
@@ -17481,7 +18246,10 @@
             "ans": "",
             "na_score": -4.862005233764648,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5922118425369263,
+                  -1.1838961839675903
+            ]
       },
       "uit_002135_0": {
             "ans": "trứng chỉ phụ thuộc vào một phần ánh sáng nhưng sự ấp trứng lại phụ thuộc chặt chẽ vào yếu tố ánh sáng",
@@ -17631,7 +18399,10 @@
             "ans": "",
             "na_score": 0.5332743525505066,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4656333923339844,
+                  -3.267369031906128
+            ]
       },
       "uit_002154_0": {
             "ans": "những tranh luận, lập luận liên quan đến Thiên Chúa",
@@ -17796,7 +18567,10 @@
             "ans": "",
             "na_score": 0.5700588226318359,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.5324946641921997,
+                  -0.3225715756416321
+            ]
       },
       "uit_002174_0": {
             "ans": "",
@@ -17988,7 +18762,10 @@
             "ans": "",
             "na_score": 0.4745771884918213,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3571010828018188,
+                  -1.148398995399475
+            ]
       },
       "uit_002196_0": {
             "ans": "",
@@ -18075,7 +18852,10 @@
             "ans": "",
             "na_score": -1.1863539218902588,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.2739105224609375,
+                  -4.176327228546143
+            ]
       },
       "uit_002207_0": {
             "ans": "",
@@ -18117,7 +18897,10 @@
             "ans": "",
             "na_score": 0.6106405258178711,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.399148941040039,
+                  -4.188929080963135
+            ]
       },
       "uit_002212_0": {
             "ans": "hại",
@@ -18150,7 +18933,10 @@
             "ans": "",
             "na_score": -1.1035367250442505,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.7641420960426331,
+                  -0.5015099048614502
+            ]
       },
       "uit_002216_0": {
             "ans": "",
@@ -18414,13 +19200,19 @@
             "ans": "",
             "na_score": -0.8691823482513428,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.998206853866577,
+                  -3.638153314590454
+            ]
       },
       "uit_002247_0": {
             "ans": "",
             "na_score": -2.504701614379883,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.617820382118225,
+                  -1.4670766592025757
+            ]
       },
       "uit_002248_0": {
             "ans": "College Luân Đôn (một trường thuộc Đại học Luân Đôn) học ngành luật",
@@ -18603,13 +19395,19 @@
             "ans": "",
             "na_score": 0.5975117683410645,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2028112411499023,
+                  -1.8056529760360718
+            ]
       },
       "uit_002266_0": {
             "ans": "",
             "na_score": -3.068112373352051,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.8128035068511963,
+                  -3.4472239017486572
+            ]
       },
       "uit_002267_0": {
             "ans": "đầu, ông từ chối và hùng hồn bước ra khỏi tòa",
@@ -18669,7 +19467,10 @@
             "ans": "",
             "na_score": -2.5719757080078125,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.228895664215088,
+                  -3.931121349334717
+            ]
       },
       "uit_002274_0": {
             "ans": "thu xếp trở về Ấn Độ",
@@ -18786,7 +19587,10 @@
             "ans": "",
             "na_score": 0.5816419124603271,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2417666912078857,
+                  -0.9019021987915039
+            ]
       },
       "uit_002288_0": {
             "ans": "Khi Chiến tranh Nam Phi bắt đầu, Gandhi chủ trương là người Ấn phải hỗ trợ chiến tranh để hợp pháp hóa yêu cầu trở thành công dân chính thức. Ông tổ chức một nhóm tình nguyện cứu thương gồm 300 người Ấn Độ và 800 người làm mướn. Tuy nhiên, sau khi chiến tranh kết thúc, tình trạng của người Ấn tại Nam Phi không khả quan hơn, vẫn tiếp tục sa đoạ. Năm 1906, chính quyền Transvaal công bố một pháp án mới, bắt người Ấn Độ của thuộc địa phải ký chứng. Tại một cuộc biểu tình lớn được tổ chức tại Johannesburg vào tháng 9 ngay trong năm đó, Gandhi lần đầu áp dụng nguyên tắc Chấp trì chân lý và đấu tranh",
@@ -18861,7 +19665,10 @@
             "ans": "",
             "na_score": -1.1834917068481445,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3923888206481934,
+                  -3.007143020629883
+            ]
       },
       "uit_002297_0": {
             "ans": "thời kì những khái niệm và kĩ thuật của phương pháp bất hợp tác và phản đối bất bạo lực",
@@ -18975,7 +19782,10 @@
             "ans": "",
             "na_score": -1.218850016593933,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.093979835510254,
+                  -3.678943395614624
+            ]
       },
       "uit_002310_0": {
             "ans": "",
@@ -19080,7 +19890,10 @@
             "ans": "",
             "na_score": 0.5579075813293457,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.512791156768799,
+                  -4.272703647613525
+            ]
       },
       "uit_002323_0": {
             "ans": "Bapu",
@@ -19122,7 +19935,10 @@
             "ans": "",
             "na_score": 0.5965644717216492,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9974007606506348,
+                  -2.8651092052459717
+            ]
       },
       "uit_002328_0": {
             "ans": "khi ông bị cảnh sát bắt giam với lý do gây bạo động và được yêu cầu rời địa phương này",
@@ -19155,7 +19971,10 @@
             "ans": "",
             "na_score": 0.5581276416778564,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.476562976837158,
+                  -4.1991963386535645
+            ]
       },
       "uit_002332_0": {
             "ans": "Gandhi và đảng Quốc dân Đại hội",
@@ -19197,7 +20016,10 @@
             "ans": "",
             "na_score": 0.4643230736255646,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.1064133644104004,
+                  -1.8549728393554688
+            ]
       },
       "uit_002337_0": {
             "ans": "",
@@ -19269,7 +20091,10 @@
             "ans": "",
             "na_score": 0.23819661140441895,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6619246006011963,
+                  -3.3105714321136475
+            ]
       },
       "uit_002345_0": {
             "ans": "huy chương Anh",
@@ -19365,7 +20190,10 @@
             "ans": "",
             "na_score": 0.5906547904014587,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.759770393371582,
+                  -2.3519396781921387
+            ]
       },
       "uit_002357_0": {
             "ans": "",
@@ -19443,7 +20271,10 @@
             "ans": "",
             "na_score": 0.5711662769317627,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  5.305994510650635,
+                  -5.0831804275512695
+            ]
       },
       "uit_002367_0": {
             "ans": "",
@@ -19626,7 +20457,10 @@
             "ans": "",
             "na_score": -1.2717251777648926,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.90617036819458,
+                  -1.7275673151016235
+            ]
       },
       "uit_002390_0": {
             "ans": "",
@@ -19653,7 +20487,10 @@
             "ans": "",
             "na_score": 0.16629424691200256,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.238395929336548,
+                  -1.93712317943573
+            ]
       },
       "uit_002394_0": {
             "ans": "",
@@ -19710,7 +20547,10 @@
             "ans": "",
             "na_score": -0.9168110489845276,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.02127742767334,
+                  -3.6766562461853027
+            ]
       },
       "uit_002401_0": {
             "ans": "",
@@ -19794,7 +20634,10 @@
             "ans": "",
             "na_score": 0.5717576742172241,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4502390623092651,
+                  -1.1841776371002197
+            ]
       },
       "uit_002412_0": {
             "ans": "",
@@ -20346,7 +21189,10 @@
             "ans": "",
             "na_score": 0.3255544602870941,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.392629861831665,
+                  -2.08172345161438
+            ]
       },
       "uit_002479_0": {
             "ans": "",
@@ -20481,7 +21327,10 @@
             "ans": "",
             "na_score": 0.2009367048740387,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3495004177093506,
+                  -2.086719512939453
+            ]
       },
       "uit_002496_0": {
             "ans": "nếu người Ấn tự sản xuất vải",
@@ -20607,7 +21456,10 @@
             "ans": "",
             "na_score": -1.7505567073822021,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7373132705688477,
+                  -2.3347198963165283
+            ]
       },
       "uit_002511_0": {
             "ans": "",
@@ -20793,7 +21645,10 @@
             "ans": "",
             "na_score": 0.3653041422367096,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.948669195175171,
+                  -2.4612181186676025
+            ]
       },
       "uit_002533_0": {
             "ans": "muốn huỷ bỏ một số lễ nghi của nhà thờ Công giáo La Mã và e ngại nhà vua sẽ phục hồi Công giáo (Catholic)",
@@ -20910,7 +21765,10 @@
             "ans": "",
             "na_score": 0.47986164689064026,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.102880001068115,
+                  -3.6857495307922363
+            ]
       },
       "uit_002547_0": {
             "ans": "Dài hạn",
@@ -20925,7 +21783,10 @@
             "ans": "",
             "na_score": 0.5750006437301636,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7073757648468018,
+                  -2.3187296390533447
+            ]
       },
       "uit_002549_0": {
             "ans": "Năm 1633, ông William Laud, Tổng Giám mục Canterbury, là người muốn áp dụng chính sách của nhà thờ nước Anh vào toàn thể nước Anh và Scotland",
@@ -20967,7 +21828,10 @@
             "ans": "",
             "na_score": -1.547318458557129,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.663245677947998,
+                  -3.312467336654663
+            ]
       },
       "uit_002554_0": {
             "ans": "4 năm",
@@ -21027,7 +21891,10 @@
             "ans": "",
             "na_score": 0.5612705945968628,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1608479022979736,
+                  -2.650973081588745
+            ]
       },
       "uit_002562_0": {
             "ans": "cắt tóc thật sát",
@@ -21411,7 +22278,10 @@
             "ans": "",
             "na_score": 0.5899268388748169,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.092951536178589,
+                  -2.743875741958618
+            ]
       },
       "uit_002608_0": {
             "ans": "",
@@ -21474,7 +22344,10 @@
             "ans": "",
             "na_score": -0.5927466154098511,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.025567531585693,
+                  -3.6316120624542236
+            ]
       },
       "uit_002616_0": {
             "ans": "",
@@ -21495,7 +22368,10 @@
             "ans": "",
             "na_score": -1.7198642492294312,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.890324354171753,
+                  -2.606200933456421
+            ]
       },
       "uit_002619_0": {
             "ans": "",
@@ -21510,7 +22386,10 @@
             "ans": "",
             "na_score": -3.724796772003174,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.005307197570801,
+                  -3.610867500305176
+            ]
       },
       "uit_002621_0": {
             "ans": "",
@@ -21534,7 +22413,10 @@
             "ans": "",
             "na_score": 0.549101710319519,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0831000804901123,
+                  -2.824197769165039
+            ]
       },
       "uit_002624_0": {
             "ans": "",
@@ -21711,7 +22593,10 @@
             "ans": "",
             "na_score": 0.5974899530410767,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9531562328338623,
+                  -2.6733903884887695
+            ]
       },
       "uit_002648_0": {
             "ans": "",
@@ -21741,7 +22626,10 @@
             "ans": "",
             "na_score": -0.004378069192171097,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  5.1399970054626465,
+                  -4.9910807609558105
+            ]
       },
       "uit_002652_0": {
             "ans": "Ông là Thống chế của Đế quốc, Tổng Tư lệnh quân đội của đế chế, cùng với John Churchill",
@@ -21816,13 +22704,19 @@
             "ans": "",
             "na_score": -0.5090144872665405,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  5.199459075927734,
+                  -4.959230899810791
+            ]
       },
       "uit_002661_0": {
             "ans": "",
             "na_score": -2.7480905055999756,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.526715040206909,
+                  -3.033886194229126
+            ]
       },
       "uit_002662_0": {
             "ans": "Friedrich I",
@@ -21963,7 +22857,10 @@
             "ans": "",
             "na_score": 0.4215395748615265,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.638350248336792,
+                  -2.293976306915283
+            ]
       },
       "uit_002680_0": {
             "ans": "",
@@ -22026,13 +22923,19 @@
             "ans": "",
             "na_score": 0.57350093126297,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.714773178100586,
+                  -2.1932153701782227
+            ]
       },
       "uit_002688_0": {
             "ans": "",
             "na_score": 0.5578435659408569,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.7187509536743164,
+                  -1.342483639717102
+            ]
       },
       "uit_002689_0": {
             "ans": "",
@@ -22044,7 +22947,10 @@
             "ans": "",
             "na_score": 0.565184473991394,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.233170747756958,
+                  -1.871713638305664
+            ]
       },
       "uit_002691_0": {
             "ans": "",
@@ -22110,7 +23016,10 @@
             "ans": "",
             "na_score": 0.5984535813331604,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.8405064344406128,
+                  -1.4228824377059937
+            ]
       },
       "uit_002699_0": {
             "ans": "",
@@ -22311,7 +23220,10 @@
             "ans": "",
             "na_score": -1.8454216718673706,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.312245845794678,
+                  -3.802459239959717
+            ]
       },
       "uit_002719_0": {
             "ans": "",
@@ -22377,7 +23289,10 @@
             "ans": "",
             "na_score": 0.5906578898429871,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.3091049194335938,
+                  -1.948306679725647
+            ]
       },
       "uit_002727_0": {
             "ans": "",
@@ -22422,13 +23337,19 @@
             "ans": "",
             "na_score": -1.7911572456359863,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.27877950668335,
+                  -3.8405086994171143
+            ]
       },
       "uit_002733_0": {
             "ans": "",
             "na_score": 0.28613635897636414,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.086698532104492,
+                  -3.6894054412841797
+            ]
       },
       "uit_002734_0": {
             "ans": "",
@@ -22572,7 +23493,10 @@
             "ans": "",
             "na_score": -2.0153772830963135,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9165878295898438,
+                  -2.6690287590026855
+            ]
       },
       "uit_002752_0": {
             "ans": "",
@@ -22689,7 +23613,10 @@
             "ans": "",
             "na_score": -1.7622803449630737,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6517271995544434,
+                  -3.2035021781921387
+            ]
       },
       "uit_002766_0": {
             "ans": "",
@@ -22710,7 +23637,10 @@
             "ans": "",
             "na_score": 0.04177355393767357,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.385211706161499,
+                  -1.9728052616119385
+            ]
       },
       "uit_002769_0": {
             "ans": "các bộ lạc Mông Cổ nằm giữa Mãn Châu và dãy núi Altai",
@@ -22725,7 +23655,10 @@
             "ans": "",
             "na_score": 0.502548336982727,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.433187961578369,
+                  -4.260951519012451
+            ]
       },
       "uit_002771_0": {
             "ans": "châu Á",
@@ -22749,7 +23682,10 @@
             "ans": "",
             "na_score": 0.5150858759880066,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5972161293029785,
+                  -3.078643321990967
+            ]
       },
       "uit_002774_0": {
             "ans": "Năm 1206, ông lấy hiệu là Thành Cát Tư Hãn, và tiến hành một loạt chiến dịch quân sự vốn nổi tiếng tàn bạo tại một phần lớn của châu Á",
@@ -22851,7 +23787,10 @@
             "ans": "",
             "na_score": -0.13271567225456238,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5593104362487793,
+                  -3.0527801513671875
+            ]
       },
       "uit_002787_0": {
             "ans": "",
@@ -23088,7 +24027,10 @@
             "ans": "",
             "na_score": -0.7203621864318848,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.173061847686768,
+                  -3.8576161861419678
+            ]
       },
       "uit_002815_0": {
             "ans": "",
@@ -23103,7 +24045,10 @@
             "ans": "",
             "na_score": -0.4981986880302429,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.4418816566467285,
+                  -4.209238529205322
+            ]
       },
       "uit_002817_0": {
             "ans": "",
@@ -23313,7 +24258,10 @@
             "ans": "",
             "na_score": -6.188094139099121,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1072299480438232,
+                  -2.904353380203247
+            ]
       },
       "uit_002842_0": {
             "ans": "",
@@ -23346,7 +24294,10 @@
             "ans": "",
             "na_score": 0.5879096388816833,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.546011209487915,
+                  -3.277625799179077
+            ]
       },
       "uit_002846_0": {
             "ans": "",
@@ -23394,7 +24345,10 @@
             "ans": "",
             "na_score": 0.5836660265922546,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.8596807718276978,
+                  -1.391038179397583
+            ]
       },
       "uit_002853_0": {
             "ans": "",
@@ -23472,7 +24426,10 @@
             "ans": "",
             "na_score": -4.008086204528809,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.180070400238037,
+                  -2.7894842624664307
+            ]
       },
       "uit_002863_0": {
             "ans": "",
@@ -23514,7 +24471,10 @@
             "ans": "",
             "na_score": 0.5802156925201416,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.6956396102905273,
+                  -2.3127615451812744
+            ]
       },
       "uit_002868_0": {
             "ans": "",
@@ -23685,7 +24645,10 @@
             "ans": "",
             "na_score": 0.5603158473968506,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2236921787261963,
+                  -1.9170491695404053
+            ]
       },
       "uit_002889_0": {
             "ans": "",
@@ -23790,7 +24753,10 @@
             "ans": "",
             "na_score": -0.1262492686510086,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.7634581327438354,
+                  -0.40529799461364746
+            ]
       },
       "uit_002901_0": {
             "ans": "",
@@ -23877,7 +24843,10 @@
             "ans": "",
             "na_score": 0.5718075037002563,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.763699531555176,
+                  -3.4672744274139404
+            ]
       },
       "uit_002912_0": {
             "ans": "",
@@ -23892,7 +24861,10 @@
             "ans": "",
             "na_score": 0.5443854331970215,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.327552080154419,
+                  -2.127124547958374
+            ]
       },
       "uit_002914_0": {
             "ans": "75 loài cá",
@@ -23919,13 +24891,19 @@
             "ans": "",
             "na_score": 0.18605580925941467,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.94193696975708,
+                  -3.6287851333618164
+            ]
       },
       "uit_002918_0": {
             "ans": "",
             "na_score": 0.5729086399078369,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4118856191635132,
+                  -1.052553653717041
+            ]
       },
       "uit_002919_0": {
             "ans": "Trung Quốc và Trung Quốc",
@@ -23949,7 +24927,10 @@
             "ans": "",
             "na_score": 0.5883588790893555,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1161556243896484,
+                  -2.72764253616333
+            ]
       },
       "uit_002922_0": {
             "ans": "Trung Quốc và Trung Quốc",
@@ -23964,7 +24945,10 @@
             "ans": "",
             "na_score": 0.5863082408905029,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.755798578262329,
+                  -3.3812997341156006
+            ]
       },
       "uit_002924_0": {
             "ans": "",
@@ -23988,7 +24972,10 @@
             "ans": "",
             "na_score": -0.23031668365001678,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.911091327667236,
+                  -4.785891532897949
+            ]
       },
       "uit_002927_0": {
             "ans": "4.1%",
@@ -24003,7 +24990,10 @@
             "ans": "",
             "na_score": 0.5233803987503052,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9724080562591553,
+                  -2.6016924381256104
+            ]
       },
       "uit_002929_0": {
             "ans": "Khai mỏ tiếp tục phát triển như một ngành công nghiệp chính của Mông Cổ với bằng chứng ở số lượng công ty Trung Quốc, Nga và Canada có mặt và tiến hành kinh doanh",
@@ -24090,7 +25080,10 @@
             "ans": "",
             "na_score": 0.5791881680488586,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1109163761138916,
+                  -0.8167911171913147
+            ]
       },
       "uit_002939_0": {
             "ans": "",
@@ -24231,7 +25224,10 @@
             "ans": "",
             "na_score": 0.5912327766418457,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6013394594192505,
+                  -1.2420034408569336
+            ]
       },
       "uit_002957_0": {
             "ans": "",
@@ -24459,7 +25455,10 @@
             "ans": "",
             "na_score": 0.5595384836196899,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7855429649353027,
+                  -2.471698045730591
+            ]
       },
       "uit_002986_0": {
             "ans": "",
@@ -24474,7 +25473,10 @@
             "ans": "",
             "na_score": 0.5572543144226074,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.761192560195923,
+                  -3.6630196571350098
+            ]
       },
       "uit_002988_0": {
             "ans": "",
@@ -24525,7 +25527,10 @@
             "ans": "",
             "na_score": -0.47433042526245117,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.486980438232422,
+                  -4.124251842498779
+            ]
       },
       "uit_002994_0": {
             "ans": "",
@@ -24735,7 +25740,10 @@
             "ans": "",
             "na_score": 0.586111843585968,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2839363813400269,
+                  -0.9257581830024719
+            ]
       },
       "uit_003019_0": {
             "ans": "",
@@ -24900,7 +25908,10 @@
             "ans": "",
             "na_score": 0.5933064818382263,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.69692325592041,
+                  -2.329256296157837
+            ]
       },
       "uit_003032_0": {
             "ans": "",
@@ -24921,7 +25932,10 @@
             "ans": "",
             "na_score": 0.5931264162063599,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.283351421356201,
+                  -1.9354321956634521
+            ]
       },
       "uit_003035_0": {
             "ans": "",
@@ -25002,7 +26016,10 @@
             "ans": "",
             "na_score": 0.5100052356719971,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3315064907073975,
+                  -0.9665424823760986
+            ]
       },
       "uit_003045_0": {
             "ans": "100 người",
@@ -25050,7 +26067,10 @@
             "ans": "",
             "na_score": 0.4265746474266052,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9601526260375977,
+                  -2.4457929134368896
+            ]
       },
       "uit_003051_0": {
             "ans": "dâu tây Quebec",
@@ -25119,7 +26139,10 @@
             "ans": "",
             "na_score": -0.13767176866531372,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.694232940673828,
+                  -2.4013192653656006
+            ]
       },
       "uit_003059_0": {
             "ans": "",
@@ -25131,7 +26154,10 @@
             "ans": "",
             "na_score": 0.5480878949165344,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3591113090515137,
+                  -2.932305335998535
+            ]
       },
       "uit_003061_0": {
             "ans": "",
@@ -25356,7 +26382,10 @@
             "ans": "",
             "na_score": 0.5846537351608276,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3460733890533447,
+                  -3.017756700515747
+            ]
       },
       "uit_003089_0": {
             "ans": "đã chi phối",
@@ -25533,7 +26562,10 @@
             "ans": "",
             "na_score": 0.5886099338531494,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.719140887260437,
+                  -1.1552692651748657
+            ]
       },
       "uit_003103_0": {
             "ans": "",
@@ -25546,9 +26578,12 @@
       },
       "uit_003104_0": {
             "ans": "",
-            "na_score": 0.5737941265106201,
-            "has_score": 0,
-            "na_score_verifier": 0
+            "na_score": 0,
+            "has_score": 0.5737941265106201,
+            "na_score_verifier": [
+                  -0.009853260591626167,
+                  0.2766607403755188
+            ]
       },
       "uit_003105_0": {
             "ans": "",
@@ -25887,13 +26922,19 @@
             "ans": "",
             "na_score": 0.5693827271461487,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.100790500640869,
+                  -3.76027250289917
+            ]
       },
       "uit_003140_0": {
             "ans": "",
             "na_score": 0.5637111067771912,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.096711158752441,
+                  -3.8392086029052734
+            ]
       },
       "uit_003141_0": {
             "ans": "",
@@ -26094,7 +27135,10 @@
             "ans": "",
             "na_score": 0.5434387922286987,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.363065481185913,
+                  -1.063688039779663
+            ]
       },
       "uit_003166_0": {
             "ans": "",
@@ -26199,7 +27243,10 @@
             "ans": "",
             "na_score": 0.11299625039100647,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5629199743270874,
+                  -1.2081032991409302
+            ]
       },
       "uit_003178_0": {
             "ans": "",
@@ -26220,13 +27267,19 @@
             "ans": "",
             "na_score": -0.7235499620437622,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.962108612060547,
+                  -2.660604953765869
+            ]
       },
       "uit_003181_0": {
             "ans": "",
             "na_score": -5.503437042236328,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.65718936920166,
+                  -2.2143216133117676
+            ]
       },
       "uit_003182_0": {
             "ans": "",
@@ -26265,7 +27318,10 @@
             "ans": "",
             "na_score": 0.5223244428634644,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.5986530780792236,
+                  -2.2971677780151367
+            ]
       },
       "uit_003187_0": {
             "ans": "",
@@ -26286,13 +27342,19 @@
             "ans": "",
             "na_score": -1.0891013145446777,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.608471870422363,
+                  -4.425962924957275
+            ]
       },
       "uit_003190_0": {
             "ans": "",
             "na_score": 0.05601859465241432,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.398756504058838,
+                  -4.161162376403809
+            ]
       },
       "uit_003191_0": {
             "ans": "",
@@ -26652,7 +27714,10 @@
             "ans": "",
             "na_score": 0.5973994731903076,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.4774603843688965,
+                  -2.1429972648620605
+            ]
       },
       "uit_003237_0": {
             "ans": "cộng đồng thương mại",
@@ -26733,7 +27798,10 @@
             "ans": "",
             "na_score": -4.249120712280273,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7956857681274414,
+                  -3.509629011154175
+            ]
       },
       "uit_003247_0": {
             "ans": "",
@@ -26790,7 +27858,10 @@
             "ans": "",
             "na_score": -0.33971673250198364,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.6665441989898682,
+                  -1.3399858474731445
+            ]
       },
       "uit_003254_0": {
             "ans": "",
@@ -26811,13 +27882,19 @@
             "ans": "",
             "na_score": 0.5824381113052368,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.444329023361206,
+                  -3.0808911323547363
+            ]
       },
       "uit_003257_0": {
             "ans": "",
             "na_score": 0.5766600370407104,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6385457515716553,
+                  -3.387113094329834
+            ]
       },
       "uit_003258_0": {
             "ans": "",
@@ -26841,7 +27918,10 @@
             "ans": "",
             "na_score": 0.5775437355041504,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.934805154800415,
+                  -2.635608196258545
+            ]
       },
       "uit_003261_0": {
             "ans": "5,3%",
@@ -26976,7 +28056,10 @@
             "ans": "",
             "na_score": 0.526638388633728,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.910797119140625,
+                  -3.7923755645751953
+            ]
       },
       "uit_003273_0": {
             "ans": "",
@@ -27123,7 +28206,10 @@
             "ans": "",
             "na_score": -0.14120881259441376,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4974164962768555,
+                  -1.2239645719528198
+            ]
       },
       "uit_003291_0": {
             "ans": "Roosevelt vận động tranh cử dựa vào các chương trình New Deal của ông chống lại đối thủ Alf Landon",
@@ -27153,7 +28239,10 @@
             "ans": "",
             "na_score": -0.2960613965988159,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9935694932937622,
+                  -1.7088829278945923
+            ]
       },
       "uit_003295_0": {
             "ans": "",
@@ -27300,7 +28389,10 @@
             "ans": "",
             "na_score": -0.5608341693878174,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.7317891120910645,
+                  -3.3372373580932617
+            ]
       },
       "uit_003313_0": {
             "ans": "",
@@ -27315,7 +28407,10 @@
             "ans": "",
             "na_score": -2.307687282562256,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.2690348625183105,
+                  -0.9296440482139587
+            ]
       },
       "uit_003315_0": {
             "ans": "",
@@ -27330,7 +28425,10 @@
             "ans": "",
             "na_score": -2.2348875999450684,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.0703485012054443,
+                  -0.8178721070289612
+            ]
       },
       "uit_003317_0": {
             "ans": "6 ghế thượng viện và 71 ghế hạ viện",
@@ -27525,7 +28623,10 @@
             "ans": "",
             "na_score": 0.5537002086639404,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1656935214996338,
+                  -0.7426777482032776
+            ]
       },
       "uit_003339_2": {
             "ans": "",
@@ -27684,7 +28785,10 @@
             "ans": "",
             "na_score": 0.5467506647109985,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.312471389770508,
+                  -3.0058271884918213
+            ]
       },
       "uit_003346_0": {
             "ans": "",
@@ -27750,13 +28854,19 @@
             "ans": "",
             "na_score": 0.3571016490459442,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.595654010772705,
+                  -3.256404399871826
+            ]
       },
       "uit_003351_0": {
             "ans": "",
             "na_score": -2.7946107387542725,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.0303022861480713,
+                  -2.708001136779785
+            ]
       },
       "uit_003352_0": {
             "ans": "",
@@ -27822,7 +28932,10 @@
             "ans": "",
             "na_score": 0.02215087041258812,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.4542918801307678,
+                  -0.19524875283241272
+            ]
       },
       "uit_003356_1": {
             "ans": "",
@@ -27837,7 +28950,10 @@
             "ans": "",
             "na_score": 0.5536342859268188,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.2781739234924316,
+                  -2.7575902938842773
+            ]
       },
       "uit_003357_1": {
             "ans": "",
@@ -27894,7 +29010,10 @@
             "ans": "",
             "na_score": -0.798038125038147,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.315368175506592,
+                  -4.2160162925720215
+            ]
       },
       "uit_003361_0": {
             "ans": "",
@@ -27906,7 +29025,10 @@
             "ans": "",
             "na_score": 0.5845627784729004,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.074486255645752,
+                  -1.4948004484176636
+            ]
       },
       "uit_003362_0": {
             "ans": "",
@@ -27963,7 +29085,10 @@
             "ans": "",
             "na_score": 0.5843772888183594,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.6705759167671204,
+                  -0.43832656741142273
+            ]
       },
       "uit_003366_0": {
             "ans": "",
@@ -27984,7 +29109,10 @@
             "ans": "",
             "na_score": 0.575380265712738,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5372931957244873,
+                  -3.2462687492370605
+            ]
       },
       "uit_003368_0": {
             "ans": "",
@@ -28068,7 +29196,10 @@
             "ans": "",
             "na_score": -4.225226402282715,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.030494451522827,
+                  -1.65952467918396
+            ]
       },
       "uit_003375_1": {
             "ans": "",
@@ -28089,7 +29220,10 @@
             "ans": "",
             "na_score": 0.5838111639022827,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4735453128814697,
+                  -1.1398557424545288
+            ]
       },
       "uit_003377_0": {
             "ans": "",
@@ -28170,7 +29304,10 @@
             "ans": "",
             "na_score": 0.2875990569591522,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.1785240173339844,
+                  -2.773360013961792
+            ]
       },
       "uit_003389_0": {
             "ans": "tất cả là viện trợ",
@@ -28185,7 +29322,10 @@
             "ans": "",
             "na_score": 0.5986823439598083,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3116062879562378,
+                  -0.8457382917404175
+            ]
       },
       "uit_003391_0": {
             "ans": "",
@@ -28257,7 +29397,10 @@
             "ans": "",
             "na_score": 0.5813254117965698,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.567876100540161,
+                  -2.0107851028442383
+            ]
       },
       "uit_003400_0": {
             "ans": "",
@@ -28272,7 +29415,10 @@
             "ans": "",
             "na_score": 0.5371262431144714,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.246552467346191,
+                  -4.118642807006836
+            ]
       },
       "uit_003402_0": {
             "ans": "",
@@ -28287,7 +29433,10 @@
             "ans": "",
             "na_score": -0.31948286294937134,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  5.045276641845703,
+                  -4.657032489776611
+            ]
       },
       "uit_003404_0": {
             "ans": "không thực hiện được vào giờ đặc biệt",
@@ -28311,7 +29460,10 @@
             "ans": "",
             "na_score": 0.5608892440795898,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.9018537998199463,
+                  -3.4322876930236816
+            ]
       },
       "uit_003407_0": {
             "ans": "",
@@ -28353,7 +29505,10 @@
             "ans": "",
             "na_score": 0.07143136113882065,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8128714561462402,
+                  -2.427164316177368
+            ]
       },
       "uit_003412_0": {
             "ans": "nổi tiếng trong đó ông nói rằng:\"Ngày hôm qua, 7 tháng 12 năm 1941 — một ngày mà đáng ghê tởm (vì hành động bất ngờ và tàn bạo của Nhật) — Hoa Kỳ bị lực lượng hải quân và không lực Đế quốc Nhật Bản cố ý và bất ngờ tấn công",
@@ -28386,7 +29541,10 @@
             "ans": "",
             "na_score": 0.2199775129556656,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.86452317237854,
+                  -1.4579795598983765
+            ]
       },
       "uit_003416_0": {
             "ans": "",
@@ -28407,7 +29565,10 @@
             "ans": "",
             "na_score": 0.4709841012954712,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.014270544052124,
+                  -1.5251176357269287
+            ]
       },
       "uit_003419_0": {
             "ans": "",
@@ -28506,25 +29667,37 @@
             "ans": "",
             "na_score": 0.5807816982269287,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2905983924865723,
+                  -1.9403183460235596
+            ]
       },
       "uit_003432_0": {
             "ans": "",
             "na_score": -1.1061854362487793,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.488189935684204,
+                  -2.1535427570343018
+            ]
       },
       "uit_003433_0": {
             "ans": "",
             "na_score": -5.776495933532715,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.569397449493408,
+                  -4.261733055114746
+            ]
       },
       "uit_003434_0": {
             "ans": "",
             "na_score": 0.5794139504432678,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.9896979331970215,
+                  -4.900482654571533
+            ]
       },
       "uit_003435_0": {
             "ans": "",
@@ -28545,7 +29718,10 @@
             "ans": "",
             "na_score": -3.7990756034851074,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3188209533691406,
+                  -2.9241621494293213
+            ]
       },
       "uit_003438_0": {
             "ans": "",
@@ -28587,7 +29763,10 @@
             "ans": "",
             "na_score": -0.5556409358978271,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.2524325847625732,
+                  -2.883829116821289
+            ]
       },
       "uit_003443_0": {
             "ans": "",
@@ -28662,7 +29841,10 @@
             "ans": "",
             "na_score": -0.3324369490146637,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.422165870666504,
+                  -3.18760085105896
+            ]
       },
       "uit_003448_0": {
             "ans": "",
@@ -28743,7 +29925,10 @@
             "ans": "",
             "na_score": 0.5830435752868652,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5702717304229736,
+                  -1.2341772317886353
+            ]
       },
       "uit_003454_0": {
             "ans": "",
@@ -28839,7 +30024,10 @@
             "ans": "",
             "na_score": 0.5343154668807983,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.4850075244903564,
+                  -2.238917350769043
+            ]
       },
       "uit_003466_0": {
             "ans": "",
@@ -28905,13 +30093,19 @@
             "ans": "",
             "na_score": -2.559680223464966,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.4878745079040527,
+                  -2.1380224227905273
+            ]
       },
       "uit_003474_0": {
             "ans": "",
             "na_score": 0.5187031030654907,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.8652050495147705,
+                  -2.325962781906128
+            ]
       },
       "uit_003475_0": {
             "ans": "",
@@ -28941,7 +30135,10 @@
             "ans": "",
             "na_score": 0.5098248720169067,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.9318408966064453,
+                  -2.4255192279815674
+            ]
       },
       "uit_003479_0": {
             "ans": "",
@@ -29019,7 +30216,10 @@
             "ans": "",
             "na_score": -0.30837327241897583,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4936320781707764,
+                  -3.134597063064575
+            ]
       },
       "uit_003488_0": {
             "ans": "phá vỡ những thỏa thuận thực thi của vị lãnh tụ Liên Xô tại Hội nghị Yalta về Ba Lan, Đức, tù binh, và các vấn đề khác",
@@ -29175,13 +30375,19 @@
             "ans": "",
             "na_score": 0.5892881155014038,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.784337043762207,
+                  -3.4583051204681396
+            ]
       },
       "uit_003506_0": {
             "ans": "",
             "na_score": 0.5881509780883789,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.2562551498413086,
+                  -1.89347505569458
+            ]
       },
       "uit_003507_0": {
             "ans": "",
@@ -29244,7 +30450,10 @@
             "ans": "",
             "na_score": 0.4762095808982849,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.549774169921875,
+                  -2.1502132415771484
+            ]
       },
       "uit_003516_0": {
             "ans": "",
@@ -29445,7 +30654,10 @@
             "ans": "",
             "na_score": 0.5481354594230652,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.3918323516845703,
+                  -3.0093367099761963
+            ]
       },
       "uit_003541_0": {
             "ans": "",
@@ -29625,7 +30837,10 @@
             "ans": "",
             "na_score": 0.3566294312477112,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  4.209928512573242,
+                  -3.909298896789551
+            ]
       },
       "uit_003563_0": {
             "ans": "",
@@ -29757,7 +30972,10 @@
             "ans": "",
             "na_score": -0.26871058344841003,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.322136402130127,
+                  -3.0095443725585938
+            ]
       },
       "uit_003580_0": {
             "ans": "",
@@ -29889,7 +31107,10 @@
             "ans": "",
             "na_score": 0.5768792629241943,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.1326043605804443,
+                  -0.9627437591552734
+            ]
       },
       "uit_003596_0": {
             "ans": "",
@@ -29970,7 +31191,10 @@
             "ans": "",
             "na_score": 0.5758575797080994,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.07401704788208,
+                  -1.7042654752731323
+            ]
       },
       "uit_003603_0": {
             "ans": "",
@@ -30084,7 +31308,10 @@
             "ans": "",
             "na_score": -2.7947325706481934,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6746997833251953,
+                  -3.267284631729126
+            ]
       },
       "uit_003615_0": {
             "ans": "",
@@ -30261,7 +31488,10 @@
             "ans": "",
             "na_score": -0.9045552611351013,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6479647159576416,
+                  -3.2917239665985107
+            ]
       },
       "uit_003636_0": {
             "ans": "",
@@ -30303,7 +31533,10 @@
             "ans": "",
             "na_score": 0.519105076789856,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.5768322944641113,
+                  -3.1801702976226807
+            ]
       },
       "uit_003641_0": {
             "ans": "bang Chihuahua, Coahuila, Nuevo León, và Tamaulipas",
@@ -30375,7 +31608,10 @@
             "ans": "",
             "na_score": 0.218344584107399,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.785491943359375,
+                  -1.4891351461410522
+            ]
       },
       "uit_003650_0": {
             "ans": "vùng Bồn địa và Núi",
@@ -30519,7 +31755,10 @@
             "ans": "",
             "na_score": -0.9378842115402222,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7885615825653076,
+                  -2.500978708267212
+            ]
       },
       "uit_003668_0": {
             "ans": "",
@@ -30723,7 +31962,10 @@
             "ans": "",
             "na_score": 0.10825173556804657,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.8093782067298889,
+                  -0.467357337474823
+            ]
       },
       "uit_003692_0": {
             "ans": "",
@@ -30756,7 +31998,10 @@
             "ans": "",
             "na_score": -0.6604554653167725,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.598552703857422,
+                  -2.306797981262207
+            ]
       },
       "uit_003696_0": {
             "ans": "3",
@@ -30846,7 +32091,10 @@
             "ans": "",
             "na_score": 0.5729219317436218,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.9878551959991455,
+                  -1.6611436605453491
+            ]
       },
       "uit_003707_0": {
             "ans": "",
@@ -30876,7 +32124,10 @@
             "ans": "",
             "na_score": 0.5910613536834717,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.3618230819702148,
+                  -1.068450689315796
+            ]
       },
       "uit_003711_0": {
             "ans": "",
@@ -31128,7 +32379,10 @@
             "ans": "",
             "na_score": 0.33723247051239014,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  0.9203847646713257,
+                  -0.658583402633667
+            ]
       },
       "uit_003741_0": {
             "ans": "các trường hợp dân sự, và Tòa Chống án Tội phạm Texas",
@@ -31194,7 +32448,10 @@
             "ans": "",
             "na_score": 0.46175920963287354,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.4041125774383545,
+                  -3.1482105255126953
+            ]
       },
       "uit_003749_0": {
             "ans": "",
@@ -31287,7 +32544,10 @@
             "ans": "",
             "na_score": -0.1613374650478363,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.854539632797241,
+                  -3.5695579051971436
+            ]
       },
       "uit_003760_0": {
             "ans": "11,3%",
@@ -31302,7 +32562,10 @@
             "ans": "",
             "na_score": -0.5350723266601562,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.4227721691131592,
+                  -1.0965056419372559
+            ]
       },
       "uit_003762_0": {
             "ans": "",
@@ -31314,7 +32577,10 @@
             "ans": "",
             "na_score": -0.776919960975647,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.7265968322753906,
+                  -2.3209547996520996
+            ]
       },
       "uit_003764_0": {
             "ans": "",
@@ -31482,7 +32748,10 @@
             "ans": "",
             "na_score": 0.2114478349685669,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.544038772583008,
+                  -2.1083571910858154
+            ]
       },
       "uit_003784_0": {
             "ans": "",
@@ -31563,13 +32832,19 @@
             "ans": "",
             "na_score": -4.392903804779053,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.438407301902771,
+                  -1.1262437105178833
+            ]
       },
       "uit_003794_0": {
             "ans": "",
             "na_score": 0.5619072914123535,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  3.6325783729553223,
+                  -3.35943341255188
+            ]
       },
       "uit_003795_0": {
             "ans": "",
@@ -31599,7 +32874,10 @@
             "ans": "",
             "na_score": -3.4567017555236816,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  2.235586404800415,
+                  -1.9467166662216187
+            ]
       },
       "uit_003799_0": {
             "ans": "",
@@ -31620,7 +32898,10 @@
             "ans": "",
             "na_score": 0.5492873191833496,
             "has_score": 0,
-            "na_score_verifier": 0
+            "na_score_verifier": [
+                  1.5646554231643677,
+                  -1.4601707458496094
+            ]
       },
       "uit_003802_0": {
             "ans": "",
