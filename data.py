@@ -122,7 +122,7 @@ class QA_data(Dataset):
                     if ex.context[j:j+1] == " ":
                         end_sentence = j-1
                         break
-                sentence_ans = self.tokenizer(ex.question+ex.context[start_sentence:end_sentence].strip()+' [SEP] '+ex.ans)
+                sentence_ans = self.tokenizer(ex.question+' '+ex.context[start_sentence:end_sentence].strip()+' [SEP] '+ex.ans)
                 tokenized_examples["sentence_ans"].append(sentence_ans)
 
 

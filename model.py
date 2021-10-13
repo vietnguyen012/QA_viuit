@@ -253,11 +253,20 @@ class QA_Model(nn.Module):
 
             for ind, (start_score, start_index, end_score, end_index) in enumerate(
                     zip(start_scores, start_indexes, end_scores, end_indexes)):
-                if end_index < start_index or end_index == start_index == 0:
-                    pred_ans = ""
-                    na_score = (start_score + end_score) / 2
-                    pred_list.append(
-                        Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist()))
+                if end_index < start_index:
+                    if start_index == end_index:
+                        start_char = offset_mappings[ind][start_index][0]
+                        end_char = offset_mappings[ind][end_index][1]
+                        pred_ans = contexts[ind][start_char:end_char]
+                        if pred_ans == "":
+                            na_score = (start_score + end_score) / 2
+                            pred_list.append(
+                                Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist()[0]))
+                    else:
+                        pred_ans = ""
+                        na_score = (start_score + end_score) / 2
+                        pred_list.append(
+                            Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist()[0]))
                 else:
                     start_char = offset_mappings[ind][start_index][0]
                     end_char = offset_mappings[ind][end_index][1]
@@ -275,21 +284,26 @@ class QA_Model(nn.Module):
                             end_sentence = j - 1
                             break
                     sentence_ans = tokenizer(questions[ind] + " " + contexts[ind][
-                                                                    start_sentence:end_sentence].strip() + ' [SEP] ' + pred_ans,truncation=True,max_length = 384)
+                                                                    start_sentence:end_sentence].strip() + ' [SEP] ' + pred_ans)
                     sentence_input_ids = torch.LongTensor(sentence_ans["input_ids"]).to(input_ids.device)
                     sentence_mask_attention = torch.LongTensor(sentence_ans["attention_mask"]).to(input_ids.device)
                     has_ans_logits = self.sentence_encoder(sentence_input_ids.unsqueeze(0),
                                                            sentence_mask_attention.unsqueeze(0))
                     clf = torch.argmax(torch.nn.Softmax(dim=-1)(has_ans_logits), dim=-1)
-                    if clf == 1:
-                        has_score = (start_score + end_score)/2
-                        pred_list.append(Prediction(ids[ind], pred_ans, has_score=has_score.cpu().tolist()))
-                    else:
-                        pred_ans = ""
-                        na_score = (start_score + end_score)/2
-                        na_score_verifier = has_ans_logits[clf]
-                        pred_list.append(
-                            Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist(), na_score_verifier=na_score_verifier.cpu().tolist()))
+                    # if clf == 1:
+                        # if pred_ans == "":
+                            # print(contexts[ind])
+                            # print(start_char)
+                            # print(end_char)
+                            # print(start_index)
+                            # print(end_index)
+                    has_score = (start_score + end_score)/2
+                    pred_list.append(Prediction(ids[ind], pred_ans, has_score=has_score.cpu().tolist()[0],score_verifier=has_ans_logits.squeeze(0).cpu().tolist()))
+                    # else:
+                    #     pred_ans = ""
+                    #     na_score = (start_score + end_score)/2
+                    #     pred_list.append(
+                    #         Prediction(ids[ind], pred_ans, na_score=na_score.cpu().tolist()[0], score_verifier=has_ans_logits.squeeze(0).cpu().tolist()))
             return pred_list
 
 

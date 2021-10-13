@@ -110,7 +110,7 @@ if __name__ == '__main__':
     shuffle(input_feature_list)
     train_size = int(len(input_feature_list) * 0.8)
     train_input_feature_list, val_input_feature_list = input_feature_list[:train_size], input_feature_list[train_size:]
-    use_checkpoint=False
+    use_checkpoint=True
     weight_decay = 0.01
     learning_rate = 2e-3
     adam_epsilon = 1e-6
@@ -131,20 +131,21 @@ if __name__ == '__main__':
     model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=num_warmup_steps,
                                                 num_training_steps=num_train_steps)
+    if use_checkpoint:
+        checkpoint = torch.load('./saved_model/checkpoint.pt')
+        epoch = checkpoint['epoch']
+        model.load_state_dict(checkpoint['model'])
+        optimizer.load_state_dict(checkpoint['optimizer'])
+        scheduler.load_state_dict(checkpoint['scheduler'])
+        f1 = checkpoint['best_f1']
+        em = checkpoint['best_exact_match']
+
     print("Begin training with {} train examples, {} val examples "
                  "{} epochs, {} batches, {} learning_rate".format(train_examples,len(val_input_feature_list),num_train_epochs,train_batch_size,learning_rate))
     besr_f1 = -1
     best_em = -1
-    if use_checkpoint:
-        checkpoint = torch.load('./saved_model/checkpoint.pt')
-        epoch = checkpoint['epoch']
-        model = checkpoint['model']
-        optimizer = checkpoint['optimizer']
-        scheduler = checkpoint['scheduler']
-        f1 = checkpoint['best_f1']
-        em = checkpoint['best_exact_match']
-        print(f"previous f1:{f1}  exact match:{em}")
     print("model:",model.eval())
+    print(f"previous f1:{f1}  exact match:{em} epoch:{epoch}")
     print("======================training======================")
     for epoch in range(num_train_epochs):
         print(f"======================epoch={epoch}=========================")
@@ -177,4 +178,4 @@ if __name__ == '__main__':
                         'best_exact_match':best_em,
                         'best_f1':best_f1,
                         'threshold':val_delta}
-                    torch.save(checkpoint, './saved_model/checkpoint.pt')
+                    torch.save(checkpoint, './saved_model/checkpoint_second.pt')

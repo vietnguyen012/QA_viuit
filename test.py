@@ -78,10 +78,10 @@ if __name__ == "__main__":
   for pred in pred_list:
       submission[pred.id] = {"ans":pred.pred,"na_score":pred.na_score,
                              "has_score":pred.has_score,
-                             "na_score_verifier":pred.na_score_verifier}
+                             "score_verifier":pred.score_verifier}
   submission_file = "results.json"
-  open_file = open(submission_file,"w")
-  json.dump(submission,open_file, indent=6)
+  open_file = open(submission_file,"w",encoding='utf8')
+  json.dump(submission,open_file, indent=6,ensure_ascii=False)
   open_file.close()
 
 
